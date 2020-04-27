@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container my-2">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.slatwallcommerce.com/default/themes/velocity/assets/images/logo-grey-2x.png" width="185" alt="Slatwall Commerce">
+            </a>
+        </div>
+    </nav>
+
+        <div class="container my-5">
+            <h1>Shopping Cart</h1>
+
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <!-- Alert message for no items in cart -->
+                    <div class="alert alert-info">There are no items in your cart</div>
+
+                    <!-- Alert message for item removed from cart -->
+                    <div class="alert alert-success">Item removed from your cart</div>
+
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4 class="mb-0">Order Items</h4>
+                        </div>
+                        <div class="card-body">
+
+                            <!-- Order Item 1 -->
+                            <div class="row border-bottom mb-5 pb-5">
+                                <div class="col-sm-2 col-3">
+                                    <img class="img-fluid rounded-sm" src="http://placehold.it/100x100">
+                                </div>
+                                <div class="col-sm-4 col-9">
+                                    <h5>Product Name 1</h5>
+
+                                    <span class="d-block d-sm-none"><strong>$ 25.00</strong></span>
+
+                                    <small class="text-muted">SKU Option 1</small>
+                                </div>
+                                <div class="col-sm-12 col-md-6 d-none d-sm-block">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h6><span class="text-muted">$</span> 25.00</h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input type="number" class="form-control form-control-sm text-center" value="1">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <h6><span class="text-muted">$</span><strong> 50.00 </strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <span class="badge badge-danger">&times;</span>
+                                        </div>
+                                    </div>
+                                    <!-- Quantity Updated Success Message -->
+                                    <div class="alert alert-success p-2 mt-3"><small>Quantity updated</small></div>
+                                </div>
+                            </div>
+
+                            <!-- Order Item 2 -->
+                            <div class="row">
+                                <div class="col-sm-2 col-3">
+                                    <img class="img-fluid rounded-sm" src="http://placehold.it/100x100">
+                                </div>
+                                <div class="col-sm-4 col-9">
+                                    <h5>Product Name 2</h5>
+
+                                    <span class="d-block d-sm-none"><strong>$ 25.00</strong></span>
+
+                                    <small class="text-muted">SKU Option 2</small>
+                                </div>
+                                <div class="col-sm-12 col-md-6 d-none d-sm-block">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h6><span class="text-muted">$</span> 25.00</h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input type="number" class="form-control form-control-sm text-center" value="1">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <h6><span class="text-muted">$</span><strong> 50.00 </strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <span class="badge badge-danger">&times;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <a href="#" class="btn btn-link">Clear Cart</a>
+                            <a href="#" class="btn btn-primary">Continue to Checkout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <!-- Order Summary -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h4 class="mb-0">Order Summary</h4>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Item Total <span class="float-right"><strong>$100.00</strong></span></li>
+                                    <li class="list-group-item">Shipping & Delivery <span class="float-right"><strong>$100.00</strong></span></li>
+                                    <li class="list-group-item">Tax <span class="float-right"><strong>$100.00</strong></span></li>
+                                    <li class="list-group-item">Discount <span class="float-right"><span class="badge badge-success">- $100.00</span></li>
+                                    <li class="list-group-item">Total <span class="float-right"><strong>$100.00</strong></span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <!-- Promotion -->
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h4 class="mb-0">Promotion Code</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="alert alert-success small">Promotion Code Applied</div>
+                                    <div class="alert alert-danger small">Invalid Promotion Code</div>
+                                    <form action="">
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control form-control-sm" placeholder="Enter promotion code" required>
+                                            <span class="input-group-append">
+                                                <button class="btn btn-secondary btn-sm" type="submit">Apply</button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="badge badge-success">50% Test Promo &times;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-block">Continue to Checkout</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-light py-3 border-top">
+            <div class="container text-center text-muted">
+                &copy; Slatwall Commerce 2020
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Detail</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container my-2">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.slatwallcommerce.com/default/themes/velocity/assets/images/logo-grey-2x.png" width="185" alt="Slatwall Commerce">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Add to Cart Success/Error message -->
+        <div class="alert alert-success">Item Added to Cart</div>
+        <div class="alert alert-danger">There was an error adding item to cart</div>
+
+      <!-- Portfolio Item Row -->
+      <div class="row">
+
+        <!-- Product Image Gallery -->
+        <div class="col-md-7">
+            <!-- Default Product Image -->
+            <img class="img-fluid rounded d-block mb-4" src="http://placehold.it/600x400" alt="Product Name">
+
+            <!-- Secondary Product Image Gallery -->
+            <a href="#"><img src="http://placehold.it/100x100" alt="Product Name" class="img-thumbnail mr-3 mb-3"></a>
+            <a href="#"><img src="http://placehold.it/100x100" alt="Product Name" class="img-thumbnail mr-3 mb-3"></a>
+            <a href="#"><img src="http://placehold.it/100x100" alt="Product Name" class="img-thumbnail mr-3 mb-3"></a>
+            <a href="#"><img src="http://placehold.it/100x100" alt="Product Name" class="img-thumbnail mr-3 mb-3"></a>
+        </div>
+
+        <!-- Product Description -->
+        <div class="col-md-5">
+            <h1>Product Name</h1>
+            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis.</p>
+
+            <form action="">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="option">Select Option</label>
+                                        <select class="form-control" id="option" required>
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="quantity">Quantity</label>
+                                        <input type="number" class="form-control" id="quantity" aria-describedby="quantity" value="1" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+                        </form>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+      </div>
+
+    <!-- Product Reviews -->
+    <h2 class="mt-5 mb-4">Reviews</h3>
+
+    <div class="card mb-4">
+		<div class="card-body">
+			<h5>Review 1</h5>
+			<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            <small class="text-muted">Posted by John Doe on 1/20/2020</small>
+        </div>
+    </div>
+    <div class="card">
+		<div class="card-body">
+			<h5>Review 2</h5>
+			<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            <small class="text-muted">Posted by John Doe on 1/20/2020</small>
+        </div>
+    </div>
+
+    <!-- Related Projects Row -->
+    <h2 class="mt-5 mb-4">Related Products</h3>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100">
+                <a href="#">
+                    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+                </a>
+                <div class="card-body">
+                    <small><a href="#" class="text-secondary">Product Type Name</a></small>
+                    <h5><a href="#">Product Name</a></h5>
+                    <s class="float-right small">$350.00</s>
+                    <p>$300.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100">
+                <a href="#">
+                    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+                </a>
+                <div class="card-body">
+                    <small><a href="#" class="text-secondary">Product Type Name</a></small>
+                    <h5><a href="#">Product Name</a></h5>
+                    <s class="float-right small">$350.00</s>
+                    <p>$300.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100">
+                <a href="#">
+                    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+                </a>
+                <div class="card-body">
+                    <small><a href="#" class="text-secondary">Product Type Name</a></small>
+                    <h5><a href="#">Product Name</a></h5>
+                    <s class="float-right small">$350.00</s>
+                    <p>$300.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100">
+                <a href="#">
+                    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+                </a>
+                <div class="card-body">
+                    <small><a href="#" class="text-secondary">Product Type Name</a></small>
+                    <h5><a href="#">Product Name</a></h5>
+                    <s class="float-right small">$350.00</s>
+                    <p>$300.00</p>
+                </div>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+
+<footer class="bg-light py-3 border-top fixed-bottom">
+    <div class="container text-center text-muted">
+        &copy; Slatwall Commerce 2020
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

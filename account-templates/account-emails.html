@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Account - Email Addresses</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container my-2">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.slatwallcommerce.com/default/themes/velocity/assets/images/logo-grey-2x.png" width="185" alt="Slatwall Commerce">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="mb-4">Account Email Addresses</h1>
+
+        <div class="row">
+            <!-- Account Sidebar Navigation -->
+            <div class="col-md-3 col-sm-12">
+                <div class="list-group">
+                    <a href="/my-account/email-addresses" class="list-group-item list-group-item-action active">
+                        Account Email Addresses
+                    </a>
+
+                    <a href="/my-account/phone-numbers" class="list-group-item list-group-item-action ">
+                        Account Phone Numbers
+                    </a>
+
+                    <a href="/my-account/address-book" class="list-group-item list-group-item-action ">
+                        Address Book
+                    </a>
+
+                    <a href="/my-account/quotes" class="list-group-item list-group-item-action ">
+                        Carts &amp; Quotes
+                    </a>
+
+                    <a href="/my-account/login-information" class="list-group-item list-group-item-action ">
+                        Login Information Update
+                    </a>
+
+                    <a href="/my-account/subscriptions" class="list-group-item list-group-item-action ">
+                        My Subscriptions
+                    </a>
+
+                    <a href="/my-account/order-history" class="list-group-item list-group-item-action ">
+                        Order History
+                    </a>
+
+                    <a href="/my-account/profile" class="list-group-item list-group-item-action ">
+                        Profile Update
+                    </a>
+                </div>
+            </div>
+
+            <!-- Email Address Listing -->
+            <div class="col-md-9">
+                <!-- Message notifications -->
+                <div class="alert alert-success">Email address added/deleted</div>
+                <div class="alert alert-info">Primary Email address updated</div>
+
+                <button type="button" class="btn btn-primary float-right mb-4" data-toggle="modal" data-target="#exampleModal">Add Email Address</button>
+
+                <table class="table table-condensed table-bordered table-striped table-responsive-sm">
+                	<tbody>
+                		<tr>
+                			<td>billybob@mailinator.com</td>
+                			<td>
+                				<span class="badge badge-primary">Primary</span>
+                			</td>
+                			<td>
+                				<a href="#" title="Delete Email Address - billybob@mailinator.com">Delete</a>
+                			</td>
+                		</tr>
+                		<tr>
+                			<td>randy.savage@mailinator.com</td>
+                			<td>
+                				<a href="#" title="Set randy.savage@mailinator.com as your primary email address">Set Primary</a>
+                			</td>
+                			<td>
+                				<a href="#" title="Delete Email Address - randy.savage@mailinator.com">Delete</a>
+                			</td>
+                		</tr>
+                	</tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<footer class="bg-light py-3 border-top fixed-bottom">
+    <div class="container text-center text-muted">
+        &copy; Slatwall Commerce 2020
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title" id="exampleModalLabel">Add Email Address</h5>
+    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    				<span aria-hidden="true">&times;</span>
+    				</button>
+    			</div>
+    			<div class="modal-body">
+    				<form action="">
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                    </form>
+    			</div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    				<button type="button" class="btn btn-primary">Save changes</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+</body>
+</html>
