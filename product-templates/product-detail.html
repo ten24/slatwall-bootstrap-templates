@@ -7,13 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Product Detail</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- FontAwesome 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -52,8 +50,12 @@
             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis.</p>
 
             <form action="">
-                <div class="card mt-5">
+                <div class="card mt-3">
                     <div class="card-body">
+
+                        <h4 class="text-left">$9.99 <small><del>$12.99</del></small></h4>
+
+
                         <form action="">
                             <div class="row">
                                 <div class="col-md-8">
@@ -63,6 +65,7 @@
                                             <option>Option 1</option>
                                             <option>Option 2</option>
                                             <option>Option 3</option>
+                                            <option disabled>Option 4 (Out of Stock)</option>
                                         </select>
                                     </div>
                                 </div>
@@ -78,6 +81,27 @@
                     </div>
                 </div>
             </form>
+
+            <div class="mt-2 mb-4">
+                <ul>
+                    <li>Code: ProductCode</li>
+                    <li>Brand: <a href="#/brand/brandURLTitle#">Brand Name</a></li>
+                    <li>Type: <a href="#/productType/productTypeURLTitle#">Product Type Name</a></li>
+                </ul>
+
+                <div class="mt-1">
+                    Categories:<br>
+                    <a href="#/category/categoryUrlTitle#">Category Name (1)</a>, <a href="#/category/categoryUrlTitle#">Category Name (2)</a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
         </div>
 
       </div>
