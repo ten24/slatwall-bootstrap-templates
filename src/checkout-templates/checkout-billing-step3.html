@@ -1,0 +1,301 @@
+<partial src="header.html" title="Checkout"></partial>
+		<!-- Start Container-->
+		<div class="container mb-5">
+			<!-- Page Title -->
+            <div class="mt-4 d-flex justify-content-between align-items-center">
+                <h1>Checkout</h1>
+                <a href="#" class="btn btn-link btn-sm">Go Back to My Cart</a>
+            </div>
+
+            <!-- Start Row -->
+			<div class="row mt-3">
+				<!-- Start Body -->
+				<div class="col-xl-7 col-md-8">
+                    <!-- Start Payment Info  -->
+                    <h3 class="mb-3 pt-3 pb-3 border-bottom">Billing Information</h3>
+
+                    <!-- Default Selected Option: Billing same as shipping option -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="billingAddress">
+                        <label class="form-check-label" for="billingAddress">Billing Address is same as Shipping Address</label>
+                    </div>
+
+					<!-- Select Billing Address: Display below if checkbox above is unchecked -->
+                    <h5 class="text-secondary my-4">Select Billing Address</h5>
+
+                    <!-- Select Existing Billing Address option - hide exsiting billing addresses if checkbox above is selected -->
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-4">
+                            <!-- Shipping Info -->
+                            <a href="#" class="btn btn-block p-0 text-left">
+                                <div class="bg-light p-4 h-100 border">
+                                    <i class="far fa-check-circle float-right"></i>
+                                    <h6 class="card-title text-muted">Home Address</h6>
+                                    <address class="small mb-0 text-body">
+                                        John Doe<br>
+                                        1 Main Street<br>
+                                        Worcester, MA 01608<br>
+                                        USA
+                                    </address>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <!-- Payment Info -->
+                            <a href="#" class="btn btn-block p-0 text-left">
+                                <div class="bg-light p-4 h-100">
+                                    <h6 class="card-title text-muted">Office Address</h6>
+                                    <address class="small mb-0 text-body">
+                                        John Doe<br>
+                                        1 Main Street<br>
+                                        Worcester, MA 01608<br>
+                                        USA
+                                    </address>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+					<!-- Create Billing Address: hide if checkbox for shipping address same as billing address above is selected  -->
+                    <h5 class="text-secondary my-4">Create Billing Address</h5>
+
+                    <!-- Billing Address Created Success Message -->
+					<div class="alert alert-success small">Billing Address Created</div>
+
+					<!-- Billing Address Create Error Message -->
+					<div class="alert alert-danger small">Error Creating Billing Address</div>
+
+                    <form action="" id="account-billing">
+                        <div class="row">
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-fn">First Name</label>
+    								<input class="form-control is-invalid" type="text" id="checkout-fn">
+                                    <div class="invalid-feedback">First Required</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-ln">Last Name</label>
+    								<input class="form-control is-invalid" type="text" id="checkout-ln">
+                                    <div class="invalid-feedback">Last Name Required</div>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="row">
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-address-1">Street Address 1</label>
+    								<input class="form-control is-invalid" type="text" id="checkout-address-1">
+                                    <div class="invalid-feedback">Street Address Required</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-address-2">Street Address 2</label>
+    								<input class="form-control" type="text" id="checkout-address-2">
+    							</div>
+    						</div>
+    					</div>
+    					<div class="row">
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-city">City</label>
+    								<input class="form-control is-invalid" type="text" id="checkout-city">
+                                    <div class="invalid-feedback">City Required</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-state">State</label>
+    								<select class="form-control custom-select is-invalid" id="checkout-state">
+    									<option>Choose State</option>
+    								</select>
+                                    <div class="invalid-feedback">State Required</div>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="row">
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-zip">ZIP Code</label>
+    								<input class="form-control is-invalid" type="text" id="checkout-zip">
+                                    <div class="invalid-feedback">Zip Code Required</div>
+    							</div>
+    						</div>
+    					</div>
+						<div class="form-group w-50 mt-3">
+							<button class="btn btn-secondary btn-block" type="submit" disabled="">Save Address <i class="fas fa-circle-notch fa-spin"></i></button>
+						</div>
+					</form>
+
+                    <!-- Select Payment Method -->
+                    <h5 class="text-secondary my-4">Select Payment Method</h5>
+
+                    <!-- Payment Method Accordion -->
+                    <div id="paymentAccordion">
+						<!-- Credit Card Payment Radio Select -->
+                		<div class="custom-control custom-radio mb-3">
+                			<input class="custom-control-input" id="checkoutPaymentCard" name="payment" type="radio" data-toggle="collapse" data-action="show" data-target="#checkoutPaymentCardCollapse">
+                			<label class="custom-control-label font-weight-bold" for="checkoutPaymentCard">
+                			Credit Card
+                			</label>
+                		</div>
+
+						<!-- Credit Card Payment Radio Dropdown -->
+                    	<div class="collapse pl-4 pt-1 pb-4" id="checkoutPaymentCardCollapse" data-parent="#paymentAccordion">
+                            <!-- Credit Card Payment Error Message -->
+							<div class="alert alert-danger small">Error processing credit card payment</div>
+
+							<!-- Credit Card Payment Form -->
+                            <form action="">
+                        		<div class="form-row form-group">
+                        			<div class="col-12">
+                        				<div class="form-group mb-4">
+                        					<label for="checkoutPaymentCardNumber">Card Number</label>
+                        					<input class="form-control is-invalid" id="checkoutPaymentCardNumber" type="text" required>
+                                            <div class="invalid-feedback">Invalid Credit Card #</div>
+                        				</div>
+                        			</div>
+                        			<div class="col-12">
+                        				<div class="form-group mb-4">
+                        					<label for="checkoutPaymentCardName">Name on Card</label>
+                        					<input class="form-control is-invalid" id="checkoutPaymentCardName" type="text" required>
+                                            <div class="invalid-feedback">Name Required</div>
+                        				</div>
+                        			</div>
+                        			<div class="col-12 col-md-4">
+                        				<div class="form-group mb-md-0">
+                        					<label for="checkoutPaymentMonth">Expiration Month</label>
+                        					<select class="custom-select is-invalid" id="checkoutPaymentMonth" required>
+                                                <option></option>
+                        						<option>January</option>
+                        						<option>February</option>
+                        						<option>March</option>
+                        					</select>
+                                            <div class="invalid-feedback">Expiration Month Required</div>
+                        				</div>
+                        			</div>
+                        			<div class="col-12 col-md-4">
+                        				<div class="form-group mb-md-0">
+                        					<label for="checkoutPaymentCardYear">Expiration Year</label>
+                        					<select class="custom-select is-invalid" id="checkoutPaymentCardYear" required>
+                                                <option></option>
+                        						<option>2017</option>
+                        						<option>2018</option>
+                        						<option>2019</option>
+                        					</select>
+                                            <div class="invalid-feedback">Expiration Year Required</div>
+                        				</div>
+                        			</div>
+                        			<div class="col-12 col-md-4">
+                        				<div class="form-group">
+                                            <label for="checkoutPaymentCardCVV">CVV</label>
+                        					<input class="form-control is-invalid" id="checkoutPaymentCardCVV" type="text" required>
+                                            <div class="invalid-feedback">CVV # Required</div>
+                        				</div>
+                        			</div>
+                        		</div>
+
+                                <div class="form-group w-50">
+                                    <!-- Toggle disabled attribute after form submit validation to continue -->
+                                    <button class="btn btn-secondary btn-block" type="submit" disabled>Continue <i class="fas fa-circle-notch fa-spin"></i></button>
+                                </div>
+                            </form>
+                            <!-- /End Credit Card Payment Form -->
+                    	</div>
+						<!-- /End Credit Card Payment Dropdown -->
+
+                        <!-- Purchase Order Payment Radio Select -->
+                		<div class="custom-control custom-radio">
+                			<input class="custom-control-input" id="checkoutPaymentPurchaseOrder" name="payment" type="radio" data-toggle="collapse" data-action="hide" data-target="#checkoutPaymentPurchaseOrder">
+                			<label class="custom-control-label font-weight-bold" for="checkoutPaymentPurchaseOrder">Purchase Order</label>
+                		</div>
+
+						<!-- Purchase Order Payment Dropdown -->
+                        <div class="collapse pl-4 pt-3" id="checkoutPaymentPurchaseOrder" data-parent="#paymentAccordion">
+                            <!-- Purchase Order Error Message -->
+							<div class="alert alert-danger small">Error processing Purchase Order</div>
+
+							<!-- Purchase Order Payment Form -->
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="purchaseOrder">Enter Purchase Order #</label>
+                                    <input class="form-control is-invalid" type="text" id="purchaseOrder" required>
+                                    <div class="invalid-feedback">Purchase Order # Required</div>
+                                </div>
+                                <div class="form-group w-50">
+                                    <!-- Toggle disabled attribute after form submit validation to continue -->
+                                    <button class="btn btn-secondary btn-block" type="submit" disabled>Continue <i class="fas fa-circle-notch fa-spin"></i></button>
+                                </div>
+                            </form>
+                            <!-- /End Purchase Order Payment Form -->
+                        </div>
+						<!-- /End Purchase Order Payment Dropdown -->
+                    </div>
+                    <!-- /End Payment Information -->
+				</div>
+                <!-- /End Body -->
+
+                <!-- Sidebar -->
+                <div class="offset-xl-1 col-xl-4 col-md-4">
+                	<!-- Order Items -->
+                	<h3 class="mb-3 pt-3 pb-3 border-bottom">Order Items</h3>
+
+                    <ul class="list-unstyled mb-5">
+                        <li class="media mb-4 pb-4 border-bottom">
+                            <img src="https://via.placeholder.com/90x90" alt="Product Name" class="img-fluid mr-3">
+                            <div class="media-body">
+                                <a class="text-body font-weight-bold" href="#">Product Name</a> <br>
+                                <span class="text-muted">$49.00</span><br>
+                                <small>Qty: 2</small><br>
+                                <small>Color: Brown</small>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="https://via.placeholder.com/90x90" alt="Product Name" class="img-fluid mr-3">
+                            <div class="media-body">
+                                <a class="text-body font-weight-bold" href="#">Product Name</a> <br>
+                                <span class="text-muted">$49.00</span><br>
+                                <small>Qty: 2</small><br>
+                                <small>Color: Brown</small>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /End Order Items -->
+
+                	<!-- Order Totals -->
+                    <div class="bg-light p-4 mb-5">
+            			<ul class="list-unstyled">
+            				<li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Subtotal</span> <span class="ml-auto font-size-sm">$89.00</span>
+            				</li>
+            				<li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Tax</span> <span class="ml-auto font-size-sm">$00.00</span>
+            				</li>
+                            <li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Discount</span> <span class="ml-auto font-size-sm">- $10.00</span>
+            				</li>
+            				<li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Shipping</span> <span class="ml-auto font-size-sm">$8.00</span>
+            				</li>
+            				<li class="d-flex font-size-lg font-weight-bold">
+            					<span>Total</span> <span class="ml-auto">$97.00</span>
+            				</li>
+            			</ul>
+                    </div>
+                    <!--/End Order Totals -->
+
+                    <!-- Place Order: Toggle disabled attribute after form submit validation to continue -->
+                	<button type="submit" class="btn btn-block btn-primary" disabled>Place Order <i class="fas fa-circle-notch fa-spin"></i></button>
+                </div>
+                <!-- /End Sidebar -->
+			</div>
+            <!-- /End Row -->
+		</div>
+        <!-- /End Container -->
+
+		<!-- Footer Partial -->
+		<partial src="footer.html"></partial>
+	</body>
+</html>

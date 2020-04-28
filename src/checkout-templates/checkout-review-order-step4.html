@@ -1,0 +1,134 @@
+<partial src="header.html" title="Checkout"></partial>
+		<!-- Start Container-->
+		<div class="container mb-5">
+			<!-- Page Title -->
+            <div class="mt-4 d-flex justify-content-between align-items-center">
+                <h1>Checkout</h1>
+                <a href="#" class="btn btn-link btn-sm">Go Back to My Cart</a>
+            </div>
+
+            <!-- Start Row -->
+			<div class="row mt-3">
+				<!-- Start Body -->
+				<div class="col-xl-7 col-md-8">
+                    <!-- Review Order -->
+                    <h3 class="mb-3 pt-3 pb-3 border-bottom">Review Order</h3>
+
+                    <div class="row">
+						<!-- Review Order: Shipping Address -->
+                        <div class="col-md-6 mb-4">
+                            <!-- Shipping Info -->
+                            <div class="bg-light p-4 h-100">
+                                <a href="#" class="small float-right">Edit</a>
+                                <h6 class="card-title text-muted">Shipping Address</h6>
+                                <address class="small mb-0">
+                                    John Doe<br>
+                                    1 Main Street<br>
+                                    Worcester, MA 01608<br>
+                                    USA
+                                </address>
+                            </div>
+                        </div>
+						<!-- Review Order: Shipping Fulfillment -->
+                        <div class="col-md-6 mb-4">
+                            <!-- Payment Info -->
+                            <div class="bg-light p-4 h-100">
+                                <a href="#" class="small float-right">Edit</a>
+                                <h6 class="card-title text-muted">Shipping Fulfillment</h6>
+                                <ul class="list-unstyled small">
+                                    <li>FedEx Shipping - $50</li>
+                                    <li>Estimated Delivery: 5-7 business days</li>
+                                </ul>
+                            </div>
+                        </div>
+						<!-- Review Order: Billing Address -->
+                        <div class="col-md-6 mb-4">
+                            <!-- Billing Address -->
+                            <div class="bg-light p-4 h-100">
+                                <a href="#" class="small float-right">Edit</a>
+                                <h6 class="card-title text-muted">Billing Address</h6>
+                                <address class="small mb-0">
+                                    John Doe<br>
+                                    1 Main Street<br>
+                                    Worcester, MA 01608<br>
+                                    USA
+                                </address>
+                            </div>
+                        </div>
+						<!-- Review Order: Payment Method -->
+                        <div class="col-md-6 mb-4">
+                            <div class="bg-light p-4 h-100">
+                                <a href="#" class="small float-right">Edit</a>
+                                <h6 class="card-title text-muted">Payment Information</h6>
+                                <p class="small">Credit Card ending in 1234</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Place Order: Toggle disabled attribute after form submit validation to continue -->
+                	<button type="submit" class="btn btn-block btn-primary mt-5" disabled>Place Order <i class="fas fa-circle-notch fa-spin"></i></button>
+                    <!-- /End Review Order -->
+				</div>
+                <!-- /End Body -->
+
+                <!-- Sidebar -->
+                <div class="offset-xl-1 col-xl-4 col-md-4">
+                	<!-- Order Items -->
+                	<h3 class="mb-3 pt-3 pb-3 border-bottom">Order Items</h3>
+
+                    <ul class="list-unstyled mb-5">
+                        <li class="media mb-4 pb-4 border-bottom">
+                            <img src="https://via.placeholder.com/90x90" alt="Product Name" class="img-fluid mr-3">
+                            <div class="media-body">
+                                <a class="text-body font-weight-bold" href="#">Product Name</a> <br>
+                                <span class="text-muted">$49.00</span><br>
+                                <small>Qty: 2</small><br>
+                                <small>Color: Brown</small>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="https://via.placeholder.com/90x90" alt="Product Name" class="img-fluid mr-3">
+                            <div class="media-body">
+                                <a class="text-body font-weight-bold" href="#">Product Name</a> <br>
+                                <span class="text-muted">$49.00</span><br>
+                                <small>Qty: 2</small><br>
+                                <small>Color: Brown</small>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /End Order Items -->
+
+                	<!-- Order Totals -->
+                    <div class="bg-light p-4 mb-5">
+            			<ul class="list-unstyled">
+            				<li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Subtotal</span> <span class="ml-auto font-size-sm">$89.00</span>
+            				</li>
+            				<li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Tax</span> <span class="ml-auto font-size-sm">$00.00</span>
+            				</li>
+                            <li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Discount</span> <span class="ml-auto font-size-sm">- $10.00</span>
+            				</li>
+            				<li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Shipping</span> <span class="ml-auto font-size-sm">$8.00</span>
+            				</li>
+            				<li class="d-flex font-size-lg font-weight-bold">
+            					<span>Total</span> <span class="ml-auto">$97.00</span>
+            				</li>
+            			</ul>
+                    </div>
+                    <!--/End Order Totals -->
+
+                    <!-- Place Order: Toggle disabled attribute after form submit validation to continue -->
+                	<button type="submit" class="btn btn-block btn-primary" disabled>Place Order <i class="fas fa-circle-notch fa-spin"></i></button>
+                </div>
+                <!-- /End Sidebar -->
+			</div>
+            <!-- /End Row -->
+		</div>
+        <!-- /End Container -->
+
+		<partial src="footer.html"></partial>
+	</body>
+</html>
