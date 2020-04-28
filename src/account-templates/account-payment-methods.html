@@ -1,17 +1,17 @@
 <!-- Header Partial -->
 <partial src="header.html" title="Account"></partial>
     <div class="container my-5">
-        <h1 class="mb-4">Account Phone Numbers</h1>
+        <h1 class="mb-4">Account Email Addresses</h1>
 
         <div class="row">
             <!-- Account Sidebar Navigation -->
             <div class="col-md-3 col-sm-12">
                 <div class="list-group">
-                    <a href="/my-account/email-addresses" class="list-group-item list-group-item-action ">
+                    <a href="/my-account/email-addresses" class="list-group-item list-group-item-action active">
                         Account Email Addresses
                     </a>
 
-                    <a href="/my-account/phone-numbers" class="list-group-item list-group-item-action active">
+                    <a href="/my-account/phone-numbers" class="list-group-item list-group-item-action ">
                         Account Phone Numbers
                     </a>
 
@@ -31,7 +31,7 @@
                         My Subscriptions
                     </a>
 
-                    <a href="/my-account/payment-methods" class="list-group-item list-group-item-action ">
+                    <a href="/my-account/payment-methods" class="list-group-item list-group-item-action active">
                         Payment Methods
                     </a>
 
@@ -45,25 +45,33 @@
                 </div>
             </div>
 
-            <!-- Email Address Listing -->
+            <!-- Payment Method Listing -->
             <div class="col-md-9">
                 <!-- Message notifications -->
-                <div class="alert alert-success">Phone number added/deleted</div>
-                <div class="alert alert-info">Primary Phone number address updated</div>
+                <div class="alert alert-success">Payment Method added/deleted</div>
+                <div class="alert alert-info">Payment Method address updated</div>
 
-                <button type="button" class="btn btn-primary float-right mb-4" data-toggle="modal" data-target="#exampleModal">Add Phone Number</button>
+                <button type="button" class="btn btn-primary float-right mb-4" data-toggle="modal" data-target="#exampleModal">Add Email Address</button>
 
                 <table class="table table-condensed table-bordered table-striped table-responsive-sm">
                 	<tbody>
-                        <tr>
-                			<td>508-555-5555</td>
-                			<td><span class="badge badge-primary">Primary</span></td>
-                			<td><a href="#" title="Delete Phone Number">Delete</a></td>
+                		<tr>
+                			<td>billybob@mailinator.com</td>
+                			<td>
+                				<span class="badge badge-primary">Primary</span>
+                			</td>
+                			<td>
+                				<a href="#" title="Delete Email Address - billybob@mailinator.com">Delete</a>
+                			</td>
                 		</tr>
                 		<tr>
-                			<td>508-555-5555</td>
-                			<td><a href="#" title="Set Primary Phone number">Set Primary</a></td>
-                			<td><a href="#" title="Delete Phone Number">Delete</a></td>
+                			<td>randy.savage@mailinator.com</td>
+                			<td>
+                				<a href="#" title="Set randy.savage@mailinator.com as your primary email address">Set Primary</a>
+                			</td>
+                			<td>
+                				<a href="#" title="Delete Email Address - randy.savage@mailinator.com">Delete</a>
+                			</td>
                 		</tr>
                 	</tbody>
                 </table>
@@ -72,14 +80,14 @@
     </div>
 
     <!-- Footer Partial -->
-    <partial src="footer.html" title="Account"></partial>
+    <partial src="footer.html"></partial>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     	<div class="modal-dialog" role="document">
     		<div class="modal-content">
     			<div class="modal-header">
-    				<h5 class="modal-title" id="exampleModalLabel">Add Phone Number</h5>
+    				<h5 class="modal-title" id="exampleModalLabel">Add Email Address</h5>
     				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
     				<span aria-hidden="true">&times;</span>
     				</button>
@@ -87,8 +95,8 @@
     			<div class="modal-body">
     				<form action="">
                         <div class="form-group">
-                            <label for="email">Phone Number</label>
-                            <input type="text" class="form-control" required>
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" required>
                         </div>
                     </form>
     			</div>
@@ -99,6 +107,5 @@
     		</div>
     	</div>
     </div>
-
-</body>
+    </body>
 </html>
