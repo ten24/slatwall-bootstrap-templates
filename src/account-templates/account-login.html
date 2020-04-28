@@ -1,0 +1,112 @@
+<!-- Header Partial -->
+<partial src="header.html" title="Account"></partial>
+    <div class="container my-5">
+
+        <div class="text-center my-3">
+            <h1>My Account</h1>
+            <p>Please login or signup to continue.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <ul class="nav nav-pills nav-fill mb-1" id="pills-tab" role="tablist">
+                	<li class="nav-item">
+                		<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Signup</a>
+                	</li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Login -->
+                	<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="card">
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" required>
+                                    </div>
+
+                                    <button class="btn btn-primary btn-block">Sign In</button>
+                                </form>
+                                <a href="#" class="btn btn-link btn-block text-center">Forgot your password?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Signup -->
+                	<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="card">
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="row">
+                                    	<div class="col-md-6">
+                                    		<div class="form-group">
+                                    			<label for="firstName">First Name</label>
+                                    			<input name="firstName" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-swvalidationrequired" ng-model="Account_Create.firstName" swvalidationrequired="true" data-keeper-lock-id="k-zwyqm2hq14s">
+                                    		</div>
+                                    	</div>
+                                    	<div class="col-md-6">
+                                    		<div class="form-group">
+                                    			<label for="lastName">Last Name</label>
+                                    			<input name="lastName" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-swvalidationrequired" ng-model="Account_Create.lastName" swvalidationrequired="true" data-keeper-lock-id="k-h2ef3p5i8l">
+                                    		</div>
+                                    	</div>
+                                    	<div class="col-md-6">
+                                    		<div class="form-group">
+                                    			<label for="emailAddress">Email Address</label>
+                                    			<input name="emailAddress" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-swvalidationrequired ng-valid-swvalidationdatatype ng-valid-swvalidationemail" ng-model="Account_Create.emailAddress" swvalidationdatatype="email" swvalidationrequired="true" data-keeper-lock-id="k-l2s7ta0eydn">
+                                    		</div>
+                                    	</div>
+                                    	<div class="col-md-6">
+                                    		<div class="form-group">
+                                    			<label for="emailConfirm">Email Address Confirm</label>
+                                    			<input name="emailAddressConfirm" class="form-control ng-pristine ng-untouched ng-isolate-scope ng-empty ng-invalid ng-invalid-swvalidationrequired ng-valid-swvalidationdatatype ng-valid-swvalidationemail" ng-model="Account_Create.emailAddressConfirm" swvalidationeqproperty="Account_Create.emailAddress" swvalidationdatatype="email" swvalidationrequired="true" data-keeper-lock-id="k-odqjuiosuq">
+                                    		</div>
+                                    	</div>
+                                    	<div class="col-md-6">
+                                    		<div class="form-group">
+                                    			<label for="password">Password</label>
+                                    			<input name="password" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-swvalidationrequired ng-invalid-swvalidationminlength" type="password" ng-model="Account_Create.password" swvalidationminlength="6" swvalidationrequired="true" data-keeper-lock-id="k-rtnvedqmkl">
+                                    		</div>
+                                    	</div>
+                                    	<div class="col-md-6">
+                                    		<div class="form-group">
+                                    			<label for="passwordConfirm">Password Confirm</label>
+                                    			<input name="passwordConfirm" class="form-control ng-pristine ng-untouched ng-isolate-scope ng-empty ng-invalid ng-invalid-swvalidationrequired" type="password" ng-model="Account_Create.passwordConfirm" swvalidationeqproperty="Account_Create.password" swvalidationrequired="true" data-keeper-lock-id="k-siywmvgtkv">
+                                    		</div>
+                                    	</div>
+                                    	<div class="col-md-6">
+                                    		<div class="form-group">
+                                    			<label for="phoneNumber">Phone Number</label>
+                                    			<input id="phoneNumber" type="text" name="phoneNumber" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="Account_CreateAccount.phoneNumber" data-keeper-lock-id="k-bnjyy56pfh">
+                                    		</div>
+                                    	</div>
+                                    	<div class="col-md-6">
+                                    		<div class="form-group">
+                                    			<label for="company" class="control-labell">Organization</label>
+                                    			<input id="company" type="text" name="company" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="Account_CreateAccount.company" data-keeper-lock-id="k-kmrlbx0yklk">
+                                    		</div>
+                                    	</div>
+                                    </div>
+                                    <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Partial -->
+    <partial src="footer.html"></partial>
+    </body>
+</html>

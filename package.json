@@ -1,0 +1,15 @@
+{
+  "name": "slatwall-bootstrap-templates",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 eCommerce templates for Account, Product & Checkout management",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ten24/slatwall-bootstrap-templates.git"
+  },
+  "author": "Jon Gibbs",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-html-partial": "^1.0.1"
+  }
+}

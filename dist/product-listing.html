@@ -1,0 +1,402 @@
+<!-- Header Partial -->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Product Listing</title>
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+        <!-- FontAwesome 5 CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous"
+        />
+    </head>
+    <!-- Body-->
+    
+    <body>
+        <!-- Navbar -->
+        <nav class="bg-light border-bottom py-3">
+            <div class="container my-2">
+                <div class="d-flex align-items-center">
+                    <!-- Slatwall Logo --> <a href="#" class="d-block mr-auto"><img src="https://www.slatwallcommerce.com/default/themes/velocity/assets/images/logo-grey-2x.png" width="185" alt="Slatwall Commerce"></a>
+
+                    <!--
+                    Header Mini Shopping Cart Dropdown -->
+                    <div class="dropdown"> <a href="#" class="btn btn-link text-body font-weight-bold" role="button"
+                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cart <i class="fas fa-angle-down"></i>
+                        </a>
+ <span class="badge badge-pill badge-secondary">2</span>
+
+                        <div
+                        class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                            <!-- Show order items if exist -->
+                            <ul class="list-unstyled p-3" style="width: 300px;">
+                                <li class="media mb-3">
+                                    <img src="https://via.placeholder.com/45x45" alt="..." class="align-self-start img-fluid mr-2">
+                                    <div class="media-body"> <a class="text-body font-weight-bold small" href="#">Product Name</a>
+
+                                        <a
+                                        href="#" class="float-right text-secondary"><i class="far fa-times-circle"></i>
+
+                                            </a>
+                                            <br> <span class="text-muted small">$49.00</span>
+ <small>Qty: 2</small>
+
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <img src="https://via.placeholder.com/45x45" alt="..." class="align-self-start img-fluid mr-2">
+                                    <div class="media-body"> <a class="text-body font-weight-bold small" href="#">Product Name</a>
+
+                                        <a
+                                        href="#" class="float-right text-secondary"><i class="far fa-times-circle"></i>
+
+                                            </a>
+                                            <br> <span class="text-muted small">$49.00</span>
+ <small>Qty: 2</small>
+
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- Show empty cart message if no order items exist -->
+                            <div class="alert alert-secondary m-2 small">There are no items in your cart.</div>
+                            <!-- Show item removed from mini
+                            cart message -->
+                            <div class="alert alert-info m-2 small">Item removed from your cart.</div>
+                            <!-- View Shopping Cart Link --> <a href="#" class="btn btn-link btn-block text-center"><small>View Shopping Cart</small></a>
+
+                    </div>
+                </div>
+                <!-- /End Mini Cart Dropdown -->
+            </div>
+            </div>
+        </nav>
+        <div class="container my-5">
+            	<h1 class="my-4">Product Listing</h4>
+			<div class="alert alert-success">Item Added to Cart</div>
+			<div class="alert alert-danger">There was an error adding item to cart</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<h6><strong>3</strong> Available Products</h6>
+				</div>
+				<div class="col-sm-6">
+				</div>
+				<div class="col-sm-2 offset-md-1">
+					<div class="dropdown">
+						<button class="btn btn-secondary btn-sm dropdown-toggle float-md-right" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Sort by
+						</button>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item active">Name - A to Z</a>
+							<a class="dropdown-item " href="#">Name - Z to A</a>
+							<a class="dropdown-item " href="#">Price - Low to High</a>
+							<a class="dropdown-item " href="#">Price - High to Low</a>
+							<a class="dropdown-item " href="#">Date Created - Newest to Oldest</a>
+							<a class="dropdown-item " href="#">Date Created - Oldest to Newest</a>
+							<a class="dropdown-item " href="#">Brand - A to Z</a>
+							<a class="dropdown-item " href="#">Brand - Z to A</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <!-- Show Applied Filters -->
+            <a href="#" class="badge badge-secondary d-inline-block mr-2">Brand1 &times;</a>
+            <a href="#" class="badge badge-secondary d-inline-block mr-2">Category1 &times;</a>
+            <a href="#" class="badge badge-secondary d-inline-block mr-2">Product Type1 &times;</a>
+
+			<div class="row mt-3">
+				<div class="col-lg-3">
+                    <div class="accordion mb-4" id="accordionExample">
+                    	<div class="card">
+                    		<div class="card-header" id="heading1">
+                                <h5 class="mb-0">
+                    				<button class="btn btn-link p-0" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    				Search
+                    				</button>
+                    			</h5>
+                    		</div>
+                    		<div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                    			<div class="card-body">
+                                    <form action="">
+                                        <input type="text" id="search" name="search" class="form-control form-control-sm" required>
+                                        <input type="submit" id="search" class="btn btn-sm btn-block btn-secondary mt-3" value="Search">
+                                    </form>
+                    			</div>
+                    		</div>
+                    	</div>
+                    	<div class="card">
+                    		<div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                    				<button class="btn btn-link p-0" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                    				Price
+                    				</button>
+                    			</h5>
+                    		</div>
+                    		<div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordionExample">
+                    			<div class="card-body">
+                                    <div class="form-check">
+			                	        <input class="form-check-input" type="checkbox" id="Price0^30" value="">
+			                	        <label class="form-check-label" for="Price0^30">Under $30</label>
+							        </div>
+                                    <div class="form-check">
+			                	        <input class="form-check-input" type="checkbox" id="Price30^75" value="">
+			                	        <label class="form-check-label" for="Price30^75">$30-$75</label>
+							        </div>
+                                    <div class="form-check">
+			                	        <input class="form-check-input" type="checkbox" id="Price300" value="">
+			                	        <label class="form-check-label" for="Price300">$300+</label>
+							        </div>
+                                    <form action="">
+            		                    <div class="form-row mt-4">
+            		                        <div class="col">
+            		                            <input type="text" id="min" class="form-control form-control-sm" placeholder="Min" value="">
+            		                        </div>
+            		                        <div class="col">
+            		                            <input type="text" id="max" class="form-control form-control-sm" placeholder="Max" value="">
+            		                        </div>
+            		                    </div>
+            		                    <input type="submit" id="submit" class="btn btn-sm btn-block btn-secondary mt-3" value="Apply" required>
+            		                </form>
+						        </div>
+                    		</div>
+                    	</div>
+                    	<div class="card">
+                    		<div class="card-header" id="heading3">
+                                <h5 class="mb-0">
+                    				<button class="btn btn-link p-0" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                    				Brands
+                    				</button>
+                    			</h5>
+                    		</div>
+                    		<div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordionExample">
+                    			<div class="card-body">
+                                    <div class="form-check">
+			                	        <input class="form-check-input" type="checkbox" id="brandName1" value="">
+			                	        <label class="form-check-label" for="brandName1">Brand Name 1</label>
+							        </div>
+                                    <div class="form-check">
+			                	        <input class="form-check-input" type="checkbox" id="brandName2" value="">
+			                	        <label class="form-check-label" for="brandName2">Brand Name 2</label>
+							        </div>
+                    			</div>
+                    		</div>
+                    	</div>
+
+                        <div class="card">
+                    		<div class="card-header" id="heading4">
+                                <h5 class="mb-0">
+                    				<button class="btn btn-link p-0" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                    				Category
+                    				</button>
+                    			</h5>
+                    		</div>
+                    		<div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordionExample">
+                    			<div class="card-body">
+                                    <div class="form-check">
+			                	        <input class="form-check-input" type="checkbox" id="category1">
+			                	        <label class="form-check-label" for="category1">Category 1</label>
+							        </div>
+                                    <div class="form-check">
+			                	        <input class="form-check-input" type="checkbox" id="category2">
+			                	        <label class="form-check-label" for="category2">Category 2</label>
+							        </div>
+                    			</div>
+                    		</div>
+                    	</div>
+
+                        <div class="card">
+                    		<div class="card-header" id="heading5">
+                                <h5 class="mb-0">
+                    				<button class="btn btn-link p-0" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                    				Product Type
+                    				</button>
+                    			</h5>
+                    		</div>
+                    		<div id="collapse5" class="collapse show" aria-labelledby="heading5" data-parent="#accordionExample">
+                    			<div class="card-body">
+                                    <div class="form-check">
+			                	        <input class="form-check-input" type="checkbox" id="productType1">
+			                	        <label class="form-check-label" for="productType1">Product Type 1</label>
+							        </div>
+                                    <div class="form-check">
+			                	        <input class="form-check-input" type="checkbox" id="productType2">
+			                	        <label class="form-check-label" for="productType2">Product Type 2</label>
+							        </div>
+                    			</div>
+                    		</div>
+                    	</div>
+                    </div>
+				</div>
+				<div class="col-lg-9">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 mb-4">
+							<div class="card h-100">
+								<a href="#">
+								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+								</a>
+								<div class="card-body">
+									<small><a href="#" class="text-secondary">Product Type Name</a></small>
+									<h5><a href="#">Product Name</a></h5>
+									<s class="float-right small">$350.00</s>
+									<p>$300.00</p>
+								</div>
+								<div class="card-footer">
+									<form action="" method="post">
+										<button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+									</form>
+								</div>
+							</div>
+						</div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+							<div class="card h-100">
+								<a href="#">
+								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+								</a>
+								<div class="card-body">
+									<small><a href="#" class="text-secondary">Product Type Name</a></small>
+									<h5><a href="#">Product Name</a></h5>
+									<s class="float-right small">$350.00</s>
+									<p>$300.00</p>
+								</div>
+								<div class="card-footer">
+									<form action="" method="post">
+										<button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+									</form>
+								</div>
+							</div>
+						</div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+							<div class="card h-100">
+								<a href="#">
+								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+								</a>
+								<div class="card-body">
+									<small><a href="#" class="text-secondary">Product Type Name</a></small>
+									<h5><a href="#">Product Name</a></h5>
+									<s class="float-right small">$350.00</s>
+									<p>$300.00</p>
+								</div>
+								<div class="card-footer">
+									<form action="" method="post">
+										<button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+									</form>
+								</div>
+							</div>
+						</div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+							<div class="card h-100">
+								<a href="#">
+								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+								</a>
+								<div class="card-body">
+									<small><a href="#" class="text-secondary">Product Type Name</a></small>
+									<h5><a href="#">Product Name</a></h5>
+									<s class="float-right small">$350.00</s>
+									<p>$300.00</p>
+								</div>
+								<div class="card-footer">
+									<form action="" method="post">
+										<button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+									</form>
+								</div>
+							</div>
+						</div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+							<div class="card h-100">
+								<a href="#">
+								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+								</a>
+								<div class="card-body">
+									<small><a href="#" class="text-secondary">Product Type Name</a></small>
+									<h5><a href="#">Product Name</a></h5>
+									<s class="float-right small">$350.00</s>
+									<p>$300.00</p>
+								</div>
+								<div class="card-footer">
+									<form action="" method="post">
+										<button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+									</form>
+								</div>
+							</div>
+						</div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+							<div class="card h-100">
+								<a href="#">
+								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+								</a>
+								<div class="card-body">
+									<small><a href="#" class="text-secondary">Product Type Name</a></small>
+									<h5><a href="#">Product Name</a></h5>
+									<s class="float-right small">$350.00</s>
+									<p>$300.00</p>
+								</div>
+								<div class="card-footer">
+									<form action="" method="post">
+										<button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <!-- Pagination -->
+            <nav class="py-2" aria-label="Pagination">
+            	<ul class="pagination justify-content-center">
+            		<li class="page-item disabled">
+            			<a class="page-link" href="#" aria-label="Previous">
+            			<span aria-hidden="true">&laquo;</span>
+            			</a>
+            		</li>
+            		<li class="page-item active disabled"><a class="page-link" href="#">1</a></li>
+            		<li class="page-item"><a class="page-link" href="#">2</a></li>
+            		<li class="page-item"><a class="page-link" href="#">3</a></li>
+            		<li class="page-item">
+            			<a class="page-link" href="#" aria-label="Next">
+            			<span aria-hidden="true">&raquo;</span>
+            			</a>
+            		</li>
+            	</ul>
+            </nav>
+		</div>
+
+        <!-- Footer Partial -->
+        <footer class="bg-light py-3 border-top">
+    <div class="container text-center text-muted">&copy; Slatwall Commerce 2020</div>
+</footer>
+<!-- Terms & Conditions Modal -->
+<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModal"
+aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                 <h5 class="modal-title" id="termsModal">Terms & Conditions</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Terms & Conditions Content Body</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"></script>
+    </body>
+</html>

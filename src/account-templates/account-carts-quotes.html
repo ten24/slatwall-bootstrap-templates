@@ -1,0 +1,108 @@
+<!-- Header Partial -->
+<partial src="header.html" title="Account"></partial>
+    <div class="container my-5">
+        <h1 class="mb-4">Account Carts & Quotes</h1>
+
+        <div class="row">
+            <!-- Account Sidebar Navigation -->
+            <div class="col-md-3 col-sm-12">
+                <div class="list-group">
+                    <a href="/my-account/email-addresses" class="list-group-item list-group-item-action">
+                        Account Email Addresses
+                    </a>
+
+                    <a href="/my-account/phone-numbers" class="list-group-item list-group-item-action ">
+                        Account Phone Numbers
+                    </a>
+
+                    <a href="/my-account/address-book" class="list-group-item list-group-item-action ">
+                        Address Book
+                    </a>
+
+                    <a href="/my-account/quotes" class="list-group-item list-group-item-action active">
+                        Carts &amp; Quotes
+                    </a>
+
+                    <a href="/my-account/login-information" class="list-group-item list-group-item-action ">
+                        Login Information Update
+                    </a>
+
+                    <a href="/my-account/subscriptions" class="list-group-item list-group-item-action ">
+                        My Subscriptions
+                    </a>
+
+                    <a href="/my-account/order-history" class="list-group-item list-group-item-action ">
+                        Order History
+                    </a>
+
+                    <a href="/my-account/profile" class="list-group-item list-group-item-action ">
+                        Profile Update
+                    </a>
+                </div>
+            </div>
+
+            <!-- Email Address Listing -->
+            <div class="col-md-9">
+
+                <table class="table table-condensed table-bordered table-striped table-responsive-sm">
+                    <thead>
+            	    	<tr>
+                            <th><strong>Date Last Updated</strong></th>
+                			<th><strong>Status</strong></th>
+                			<th><strong>Item Count</strong></th>
+                			<th><strong>Total</strong></th>
+                            <th>&nbsp;</th>
+            		    </tr>
+                    </thead>
+                	<tbody>
+                		<tr>
+                			<td>1/20/20/</td>
+                			<td>Not Placed</td>
+                			<td>0</td>
+                			<td>$0.00</td>
+                            <td><a href="btn btn-link">View</td>
+                		</tr>
+                        <tr>
+                			<td>1/20/20/</td>
+                			<td>Not Placed</td>
+                			<td>0</td>
+                			<td>$0.00</td>
+                            <td><a href="btn btn-link">View</td>
+                		</tr>
+                	</tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Partial -->
+    <partial src="footer.html"></partial>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title" id="exampleModalLabel">Add Email Address</h5>
+    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    				<span aria-hidden="true">&times;</span>
+    				</button>
+    			</div>
+    			<div class="modal-body">
+    				<form action="">
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                    </form>
+    			</div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    				<button type="button" class="btn btn-primary">Save changes</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    </body>
+</html>

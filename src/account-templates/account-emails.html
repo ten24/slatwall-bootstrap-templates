@@ -1,0 +1,107 @@
+<!-- Header Partial -->
+<partial src="header.html" title="Account"></partial>
+    <div class="container my-5">
+        <h1 class="mb-4">Account Email Addresses</h1>
+
+        <div class="row">
+            <!-- Account Sidebar Navigation -->
+            <div class="col-md-3 col-sm-12">
+                <div class="list-group">
+                    <a href="/my-account/email-addresses" class="list-group-item list-group-item-action active">
+                        Account Email Addresses
+                    </a>
+
+                    <a href="/my-account/phone-numbers" class="list-group-item list-group-item-action ">
+                        Account Phone Numbers
+                    </a>
+
+                    <a href="/my-account/address-book" class="list-group-item list-group-item-action ">
+                        Address Book
+                    </a>
+
+                    <a href="/my-account/quotes" class="list-group-item list-group-item-action ">
+                        Carts &amp; Quotes
+                    </a>
+
+                    <a href="/my-account/login-information" class="list-group-item list-group-item-action ">
+                        Login Information Update
+                    </a>
+
+                    <a href="/my-account/subscriptions" class="list-group-item list-group-item-action ">
+                        My Subscriptions
+                    </a>
+
+                    <a href="/my-account/order-history" class="list-group-item list-group-item-action ">
+                        Order History
+                    </a>
+
+                    <a href="/my-account/profile" class="list-group-item list-group-item-action ">
+                        Profile Update
+                    </a>
+                </div>
+            </div>
+
+            <!-- Email Address Listing -->
+            <div class="col-md-9">
+                <!-- Message notifications -->
+                <div class="alert alert-success">Email address added/deleted</div>
+                <div class="alert alert-info">Primary Email address updated</div>
+
+                <button type="button" class="btn btn-primary float-right mb-4" data-toggle="modal" data-target="#exampleModal">Add Email Address</button>
+
+                <table class="table table-condensed table-bordered table-striped table-responsive-sm">
+                	<tbody>
+                		<tr>
+                			<td>billybob@mailinator.com</td>
+                			<td>
+                				<span class="badge badge-primary">Primary</span>
+                			</td>
+                			<td>
+                				<a href="#" title="Delete Email Address - billybob@mailinator.com">Delete</a>
+                			</td>
+                		</tr>
+                		<tr>
+                			<td>randy.savage@mailinator.com</td>
+                			<td>
+                				<a href="#" title="Set randy.savage@mailinator.com as your primary email address">Set Primary</a>
+                			</td>
+                			<td>
+                				<a href="#" title="Delete Email Address - randy.savage@mailinator.com">Delete</a>
+                			</td>
+                		</tr>
+                	</tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Partial -->
+    <partial src="footer.html"></partial>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title" id="exampleModalLabel">Add Email Address</h5>
+    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    				<span aria-hidden="true">&times;</span>
+    				</button>
+    			</div>
+    			<div class="modal-body">
+    				<form action="">
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                    </form>
+    			</div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    				<button type="button" class="btn btn-primary">Save changes</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,547 @@
+<!-- Header Partial -->
+<partial src="header.html" title="Checkout"></partial>
+		<!-- Start Container-->
+		<div class="container mb-5">
+			<!-- Page Title -->
+            <div class="mt-4 d-flex justify-content-between align-items-center">
+                <h1></h1>
+                <a href="#" class="btn btn-link btn-sm">Go Back to My Cart</a>
+            </div>
+
+            <!-- Start Row -->
+			<div class="row mt-3">
+				<!-- Start Body -->
+				<div class="col-xl-7 col-md-8">
+					<!-- Account Login / Create Account -->
+					<h3 class="mb-3 pt-3 pb-3 border-bottom">Account Information</h3>
+
+					<ul class="nav nav-pills nav-fill mb-4" id="pills-tab" role="tablist">
+	                	<li class="nav-item">
+	                		<a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="false">Login</a>
+	                	</li>
+	                	<li class="nav-item">
+	                		<a class="nav-link" id="pills-create-account-tab" data-toggle="pill" href="#pills-create-account" role="tab" aria-controls="pills-create-account" aria-selected="true">Create Account</a>
+	                	</li>
+                	</ul>
+					<div class="tab-content" id="pills-tabContent">
+	                    <!-- Account Login -->
+	                	<div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+							<div class="alert alert-danger small">The username or password that you entered is invalid.</div>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control is-invalid" required>
+									<div class="invalid-feedback">Please enter a valid email address</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control is-invalid" required>
+									<div class="invalid-feedback">Password Required</div>
+                                </div>
+
+								<div class="form-group w-50">
+		                            <!-- Toggle disabled attribute after form submit validation to continue -->
+		                            <button class="btn btn-secondary btn-block" type="submit" disabled>Continue</button>
+		                        </div>
+                            </form>
+	                    </div>
+						<!-- /End Account Login -->
+
+	                    <!-- Create Account Tab -->
+	                	<div class="tab-pane fade" id="pills-create-account" role="tabpanel" aria-labelledby="pills-create-account-tab">
+							<!-- Create Account Form -->
+							<form action="" id="create-account" class="mt-3">
+		    					<div class="row">
+		    						<div class="col-sm-6">
+		    							<div class="form-group">
+		    								<label for="checkout-fn">First Name</label>
+		    								<input class="form-control is-invalid" type="text" id="checkout-fn" required>
+		                                    <div class="invalid-feedback">First Name Required</div>
+		    							</div>
+		    						</div>
+		    						<div class="col-sm-6">
+		    							<div class="form-group">
+		    								<label for="checkout-ln">Last Name</label>
+		    								<input class="form-control is-invalid" type="text" id="checkout-ln" required>
+		                                    <div class="invalid-feedback">Last Name Required</div>
+		    							</div>
+		    						</div>
+		    					</div>
+		    					<div class="row">
+		    						<div class="col-sm-6">
+		    							<div class="form-group">
+		    								<label for="checkout-email">E-mail Address</label>
+		    								<input class="form-control is-invalid" type="email" id="checkout-email" required>
+		                                    <div class="invalid-feedback">Email Required</div>
+		    							</div>
+		    						</div>
+									<div class="col-sm-6">
+		    							<div class="form-group">
+		    								<label for="checkout-email-confirm">Confirm E-mail Address</label>
+		    								<input class="form-control is-invalid" type="email" id="checkout-email-confirm" required>
+		                                    <div class="invalid-feedback">Confirm E-mail Address Required</div>
+		    							</div>
+		    						</div>
+								</div>
+								<div class="row">
+		    						<div class="col-sm-6">
+		    							<div class="form-group">
+		    								<label for="checkout-phone">Phone Number</label>
+		    								<input class="form-control is-invalid" type="text" id="checkout-phone" required>
+		                                    <div class="invalid-feedback">Phone Number Required</div>
+		    							</div>
+		    						</div>
+									<div class="col-sm-6">
+		    							<div class="form-group">
+		    								<label for="checkout-organization">Organization</label>
+		    								<input class="form-control is-invalid" type="text" id="checkout-organization" required>
+		                                    <div class="invalid-feedback">Organization Required</div>
+		    							</div>
+		    						</div>
+		    					</div>
+		    					<div class="row">
+		    						<div class="col-sm-6">
+		    							<div class="form-group">
+		    								<label for="password">Password</label>
+		    								<input class="form-control is-invalid" type="password" id="password" required>
+		                                    <div class="invalid-feedback">Password Required</div>
+		    							</div>
+		    						</div>
+		    						<div class="col-sm-6">
+		    							<div class="form-group">
+		    								<label for="confirm-password">Confirm Password</label>
+		    								<input class="form-control is-invalid" type="password" id="confirm-password" required>
+		                                    <div class="invalid-feedback">Confirm Password Required</div>
+		    							</div>
+		    						</div>
+		    					</div>
+
+		    					<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input is-invalid" type="checkbox" value="" id="terms-conditions" required>
+										<label class="form-check-label" for="terms-conditions">
+										Accept <a href="#" data-toggle="modal" data-target="#termsModal">Terms & Conditions</a>
+										</label>
+		                                <div class="invalid-feedback">Terms & Conditions Required</div>
+									</div>
+		    					</div>
+		                        <div class="form-group w-50">
+		                            <!-- Toggle disabled attribute after form submit validation to continue -->
+		                            <button class="btn btn-secondary btn-block" type="submit" disabled>Continue</button>
+		                        </div>
+		                    </form>
+							<!-- /End Create Account Form -->
+	                    </div>
+						<!-- /End Create Account -->
+	                </div>
+
+
+					<!-- Shipping Info -->
+					<h3 class="mb-3 pt-5 pb-3 border-bottom">Shipping Information</h3>
+
+                    <!-- Shipping Address -->
+                    <h5 class="text-secondary my-4">Create Shipping Address</h5>
+
+					<!-- Shipping Address Created Success Message -->
+					<div class="alert alert-success small">Shipping Address Created</div>
+
+					<!-- Shipping Address Create Error Message -->
+					<div class="alert alert-danger small">Error Creating Shipping Address</div>
+
+                    <form action="" id="account-shipping">
+                        <div class="row">
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-fn">First Name</label>
+    								<input class="form-control is-invalid" type="text" id="checkout-fn">
+                                    <div class="invalid-feedback">First Required</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-ln">Last Name</label>
+    								<input class="form-control is-invalid" type="text" id="checkout-ln">
+                                    <div class="invalid-feedback">Last Name Required</div>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="row">
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-address-1">Street Address 1</label>
+    								<input class="form-control is-invalid" type="text" id="checkout-address-1">
+                                    <div class="invalid-feedback">Street Address Required</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-address-2">Street Address 2</label>
+    								<input class="form-control" type="text" id="checkout-address-2">
+    							</div>
+    						</div>
+    					</div>
+    					<div class="row">
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-city">City</label>
+    								<input class="form-control is-invalid" type="text" id="checkout-city">
+                                    <div class="invalid-feedback">City Required</div>
+    							</div>
+    						</div>
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-state">State</label>
+    								<select class="form-control custom-select is-invalid" id="checkout-state">
+    									<option>Choose State</option>
+    								</select>
+                                    <div class="invalid-feedback">State Required</div>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="row">
+    						<div class="col-sm-6">
+    							<div class="form-group">
+    								<label for="checkout-zip">ZIP Code</label>
+    								<input class="form-control is-invalid" type="text" id="checkout-zip">
+                                    <div class="invalid-feedback">Zip Code Required</div>
+    							</div>
+    						</div>
+    					</div>
+                    </form>
+
+                    <!-- Select Existing Shipping Address -->
+                    <h5 class="text-secondary my-4">Select Shipping Address</h5>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <!-- Shipping Info -->
+                            <a href="#" class="btn btn-block p-0 text-left">
+                                <div class="bg-light p-4 h-100 border">
+                                    <i class="far fa-check-circle float-right"></i>
+                                    <h6 class="card-title text-muted">Home Address</h6>
+                                    <address class="small mb-0 text-body">
+                                        John Doe<br>
+                                        1 Main Street<br>
+                                        Worcester, MA 01608<br>
+                                        USA
+                                    </address>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <!-- Payment Info -->
+                            <a href="#" class="btn btn-block p-0 text-left">
+                                <div class="bg-light p-4 h-100">
+                                    <h6 class="card-title text-muted">Office Address</h6>
+                                    <address class="small mb-0 text-body">
+                                        John Doe<br>
+                                        1 Main Street<br>
+                                        Worcester, MA 01608<br>
+                                        USA
+                                    </address>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Fulfillment -->
+                    <h5 class="text-secondary my-4">Select Shipping Fulfillment</h5>
+
+                    <div class="form-check mb-3">
+                	    <input class="form-check-input" type="radio" name="exampleRadios" id="shipping1" value="option1" checked>
+                	    <label class="form-check-label" for="shipping1">FedEx Shipping - $50</label>
+                    </div>
+                    <div class="form-check mb-3">
+                    	<input class="form-check-input" type="radio" name="exampleRadios" id="shipping2" value="option2">
+                    	<label class="form-check-label" for="shipping2">UPS Shipping - $40</label>
+                    </div>
+
+                    <div class="form-group w-50 mt-5">
+                        <!-- Toggle disabled attribute after form submit validation to continue -->
+                        <button class="btn btn-secondary btn-block" type="submit" disabled>Continue</button>
+                    </div>
+                    <!-- /End Shipping Info -->
+
+                    <!-- Start Payment Info  -->
+                    <h3 class="mb-3 pt-5 pb-3 border-bottom">Billing Information</h3>
+
+                    <!-- Billing Address -->
+                    <h5 class="text-secondary my-4">Select Billing Address</h5>
+
+
+                    <!-- Billing same as shipping option -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="billingAddress" checked>
+                        <label class="form-check-label" for="billingAddress">Billing Address is same as Shipping Address</label>
+                    </div>
+
+                    <!-- Select Existing Billing Address option - hide if checkbox above is selected -->
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-4">
+                            <!-- Shipping Info -->
+                            <a href="#" class="btn btn-block p-0 text-left">
+                                <div class="bg-light p-4 h-100 border">
+                                    <i class="far fa-check-circle float-right"></i>
+                                    <h6 class="card-title text-muted">Home Address</h6>
+                                    <address class="small mb-0 text-body">
+                                        John Doe<br>
+                                        1 Main Street<br>
+                                        Worcester, MA 01608<br>
+                                        USA
+                                    </address>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <!-- Payment Info -->
+                            <a href="#" class="btn btn-block p-0 text-left">
+                                <div class="bg-light p-4 h-100">
+                                    <h6 class="card-title text-muted">Office Address</h6>
+                                    <address class="small mb-0 text-body">
+                                        John Doe<br>
+                                        1 Main Street<br>
+                                        Worcester, MA 01608<br>
+                                        USA
+                                    </address>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Select Payment Method -->
+                    <h5 class="text-secondary my-4">Select Payment Method</h5>
+
+                    <!-- Payment Method Accordion -->
+                    <div id="paymentAccordion">
+						<!-- Credit Card Payment Radio Select -->
+                		<div class="custom-control custom-radio mb-3">
+                			<input class="custom-control-input" id="checkoutPaymentCard" name="payment" type="radio" data-toggle="collapse" data-action="show" data-target="#checkoutPaymentCardCollapse">
+                			<label class="custom-control-label font-weight-bold" for="checkoutPaymentCard">
+                			Credit Card
+                			</label>
+                		</div>
+
+						<!-- Credit Card Payment Radio Dropdown -->
+                    	<div class="collapse pl-4 pt-1 pb-4" id="checkoutPaymentCardCollapse" data-parent="#paymentAccordion">
+							<!-- Credit Card Payment Error Message -->
+							<div class="alert alert-danger small">Error processing credit card payment</div>
+
+							<!-- Credit Card Payment Form -->
+							<form action="">
+	                    		<div class="form-row form-group">
+	                    			<div class="col-12">
+	                    				<div class="form-group mb-4">
+	                    					<label for="checkoutPaymentCardNumber">Card Number</label>
+	                    					<input class="form-control is-invalid" id="checkoutPaymentCardNumber" type="text" required>
+	                                        <div class="invalid-feedback">Invalid Credit Card #</div>
+	                    				</div>
+	                    			</div>
+	                    			<div class="col-12">
+	                    				<div class="form-group mb-4">
+	                    					<label for="checkoutPaymentCardName">Name on Card</label>
+	                    					<input class="form-control is-invalid" id="checkoutPaymentCardName" type="text" required>
+	                                        <div class="invalid-feedback">Name Required</div>
+	                    				</div>
+	                    			</div>
+	                    			<div class="col-12 col-md-4">
+	                    				<div class="form-group mb-md-0">
+	                    					<label for="checkoutPaymentMonth">Expiration Month</label>
+	                    					<select class="custom-select is-invalid" id="checkoutPaymentMonth" required>
+	                                            <option></option>
+	                    						<option>January</option>
+	                    						<option>February</option>
+	                    						<option>March</option>
+	                    					</select>
+	                                        <div class="invalid-feedback">Expiration Month Required</div>
+	                    				</div>
+	                    			</div>
+	                    			<div class="col-12 col-md-4">
+	                    				<div class="form-group mb-md-0">
+	                    					<label for="checkoutPaymentCardYear">Expiration Year</label>
+	                    					<select class="custom-select is-invalid" id="checkoutPaymentCardYear" required>
+	                                            <option></option>
+	                    						<option>2017</option>
+	                    						<option>2018</option>
+	                    						<option>2019</option>
+	                    					</select>
+	                                        <div class="invalid-feedback">Expiration Year Required</div>
+	                    				</div>
+	                    			</div>
+	                    			<div class="col-12 col-md-4">
+	                    				<div class="form-group">
+	                                        <label for="checkoutPaymentCardCVV">CVV</label>
+	                    					<input class="form-control is-invalid" id="checkoutPaymentCardCVV" type="text" required>
+	                                        <div class="invalid-feedback">CVV # Required</div>
+	                    				</div>
+	                    			</div>
+	                    		</div>
+	                            <div class="form-group w-50">
+	                                <!-- Toggle disabled attribute after form submit validation to continue -->
+	                                <button class="btn btn-secondary btn-block" type="submit" disabled>Continue <i class="fas fa-circle-notch fa-spin"></i></button>
+	                            </div>
+							</form>
+                    	</div>
+						<!-- /End Credit Card Payment Dropdown -->
+
+                        <!-- Purchase Order Payment Radio Select -->
+                		<div class="custom-control custom-radio">
+                			<input class="custom-control-input" id="checkoutPaymentPurchaseOrder" name="payment" type="radio" data-toggle="collapse" data-action="hide" data-target="#checkoutPaymentPurchaseOrder">
+                			<label class="custom-control-label font-weight-bold" for="checkoutPaymentPurchaseOrder">Purchase Order</label>
+                		</div>
+
+						<!-- Purchase Order Payment Dropdown -->
+                        <div class="collapse pl-4 pt-3" id="checkoutPaymentPurchaseOrder" data-parent="#paymentAccordion">
+							<!-- Purchase Order Error Message -->
+							<div class="alert alert-danger small">Error processing Purchase Order</div>
+
+							<!-- Purchase Order Payment Form -->
+							<form action="">
+	                            <div class="form-group">
+	                                <label for="purchaseOrder">Enter Purchase Order #</label>
+	                                <input class="form-control is-invalid" type="text" id="purchaseOrder" required>
+	                                <div class="invalid-feedback">Purchase Order # Required</div>
+	                            </div>
+	                            <div class="form-group w-50">
+	                                <!-- Toggle disabled attribute after form submit validation to continue -->
+	                                <button class="btn btn-secondary btn-block" type="submit" disabled>Continue <i class="fas fa-circle-notch fa-spin"></i></button>
+	                            </div>
+							</form>
+                        </div>
+						<!-- /End Purchase Order Payment Dropdown -->
+                    </div>
+                    <!-- /End Payment Information -->
+
+                    <!-- Review Order -->
+                    <h3 class="mb-3 pt-5 pb-3 border-bottom">Review Order</h3>
+
+                    <div class="row">
+						<!-- Review Order: Shipping Address -->
+                        <div class="col-md-6 mb-4">
+                            <!-- Shipping Info -->
+                            <div class="bg-light p-4 h-100">
+                                <a href="#" class="small float-right">Edit</a>
+                                <h6 class="card-title text-muted">Shipping Address</h6>
+                                <address class="small mb-0">
+                                    John Doe<br>
+                                    1 Main Street<br>
+                                    Worcester, MA 01608<br>
+                                    USA
+                                </address>
+                            </div>
+                        </div>
+						<!-- Review Order: Shipping Fulfillment -->
+                        <div class="col-md-6 mb-4">
+                            <!-- Payment Info -->
+                            <div class="bg-light p-4 h-100">
+                                <a href="#" class="small float-right">Edit</a>
+                                <h6 class="card-title text-muted">Shipping Fulfillment</h6>
+                                <ul class="list-unstyled small">
+                                    <li>FedEx Shipping - $50</li>
+                                    <li>Estimated Delivery: 5-7 business days</li>
+                                </ul>
+                            </div>
+                        </div>
+						<!-- Review Order: Billing Address -->
+                        <div class="col-md-6 mb-4">
+                            <!-- Billing Address -->
+                            <div class="bg-light p-4 h-100">
+                                <a href="#" class="small float-right">Edit</a>
+                                <h6 class="card-title text-muted">Billing Address</h6>
+                                <address class="small mb-0">
+                                    John Doe<br>
+                                    1 Main Street<br>
+                                    Worcester, MA 01608<br>
+                                    USA
+                                </address>
+                            </div>
+                        </div>
+						<!-- Review Order: Payment Method -->
+                        <div class="col-md-6 mb-4">
+                            <div class="bg-light p-4 h-100">
+                                <a href="#" class="small float-right">Edit</a>
+                                <h6 class="card-title text-muted">Payment Information</h6>
+                                <p class="small">Credit Card ending in 1234</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Place Order: Toggle disabled attribute after form submit validation to continue -->
+                	<button type="submit" class="btn btn-block btn-primary mt-5" disabled>Place Order <i class="fas fa-circle-notch fa-spin"></i></button>
+                    <!-- /End Review Order -->
+				</div>
+                <!-- /End Body -->
+
+                <!-- Sidebar -->
+                <div class="offset-xl-1 col-xl-4 col-md-4">
+                	<!-- Order Items -->
+                	<h3 class="mb-3 pt-3 pb-3 border-bottom">Order Items</h3>
+
+                    <ul class="list-unstyled mb-5">
+                        <li class="media mb-4 pb-4 border-bottom">
+                            <img src="https://via.placeholder.com/90x90" alt="Product Name" class="img-fluid mr-3">
+                            <div class="media-body">
+                                <a class="text-body font-weight-bold" href="#">Product Name</a> <br>
+                                <span class="text-muted">$49.00</span><br>
+                                <small>Qty: 2</small><br>
+                                <small>Color: Brown</small>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="https://via.placeholder.com/90x90" alt="Product Name" class="img-fluid mr-3">
+                            <div class="media-body">
+                                <a class="text-body font-weight-bold" href="#">Product Name</a> <br>
+                                <span class="text-muted">$49.00</span><br>
+                                <small>Qty: 2</small><br>
+                                <small>Color: Brown</small>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /End Order Items -->
+
+                	<!-- Order Totals -->
+                    <div class="bg-light p-4 mb-5">
+            			<ul class="list-unstyled">
+            				<li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Subtotal</span> <span class="ml-auto font-size-sm">$89.00</span>
+            				</li>
+            				<li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Tax</span> <span class="ml-auto font-size-sm">$00.00</span>
+            				</li>
+                            <li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Discount</span> <span class="ml-auto font-size-sm">- $10.00</span>
+            				</li>
+            				<li class="d-flex mb-3 pb-3 border-bottom">
+            					<span>Shipping</span> <span class="ml-auto font-size-sm">$8.00</span>
+            				</li>
+            				<li class="d-flex font-size-lg font-weight-bold">
+            					<span>Total</span> <span class="ml-auto">$97.00</span>
+            				</li>
+            			</ul>
+                    </div>
+                    <!--/End Order Totals -->
+
+                    <!-- Place Order: Toggle disabled attribute after form submit validation to continue -->
+                	<button type="submit" class="btn btn-block btn-primary" disabled>Place Order <i class="fas fa-circle-notch fa-spin"></i></button>
+                </div>
+                <!-- /End Sidebar -->
+			</div>
+            <!-- /End Row -->
+
+            <!-- Use Loader on page load, form submissions, place order -->
+            <div class="text-center my-5">
+                <i class="fas fa-circle-notch fa-spin fa-3x"></i>
+            </div>
+
+            <!-- No Cart Items Message -->
+            <div class="alert alert-info my-5">
+                There are no items in your shopping cart.
+            </div>
+
+		</div>
+        <!-- /End Container -->
+
+		<!-- Footer Partial -->
+        <partial src="footer.html"></partial>
+	</body>
+</html>
