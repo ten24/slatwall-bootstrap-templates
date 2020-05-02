@@ -1,13 +1,13 @@
 <!-- Header Partial -->
 <partial src="header.html" title="Account"></partial>
     <div class="container my-5">
-        <h1 class="mb-4">Account Email Addresses</h1>
+        <h1 class="mb-4">Payment Methods</h1>
 
         <div class="row">
             <!-- Account Sidebar Navigation -->
             <div class="col-md-3 col-sm-12">
                 <div class="list-group">
-                    <a href="/my-account/email-addresses" class="list-group-item list-group-item-action active">
+                    <a href="/my-account/email-addresses" class="list-group-item list-group-item-action">
                         Account Email Addresses
                     </a>
 
@@ -50,6 +50,7 @@
                 <!-- Message notifications -->
                 <div class="alert alert-success">Payment Method added/deleted</div>
                 <div class="alert alert-info">Payment Method address updated</div>
+                <div class="alert alert-info">No payment methods saved. Add a payment method.</div>
 
                 <button type="button" class="btn btn-primary float-right mb-4" data-toggle="modal" data-target="#exampleModal">Add Payment Method</button>
 
@@ -88,7 +89,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    	<div class="modal-dialog" role="document">
+    	<div class="modal-dialog modal-lg" role="document">
     		<div class="modal-content">
     			<div class="modal-header">
     				<h5 class="modal-title" id="exampleModalLabel">Add Payment Method</h5>
@@ -99,14 +100,14 @@
     			<div class="modal-body">
     				<form action="">
                         <div class="form-row form-group">
-                            <div class="col-12">
+                            <div class="col-md-6">
                                 <div class="form-group mb-4">
                                     <label for="checkoutPaymentCardNumber">Card Number</label>
                                     <input class="form-control is-invalid" id="checkoutPaymentCardNumber" type="text" required>
                                     <div class="invalid-feedback">Invalid Credit Card #</div>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-md-6">
                                 <div class="form-group mb-4">
                                     <label for="checkoutPaymentCardName">Name on Card</label>
                                     <input class="form-control is-invalid" id="checkoutPaymentCardName" type="text" required>
