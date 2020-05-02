@@ -77,16 +77,18 @@
             </div>
         </nav>
         <div class="container my-5">
+             <h1 class="mb-4">Profile Update</h1>
+
             <div class="row">
                 <!-- Account Sidebar Navigation -->
                 <div class="col-md-3 col-sm-12">
-                    <div class="list-group"> <a href="/my-account/email-addresses" class="list-group-item list-group-item-action ">
+                    <div class="list-group"> <a href="/my-account/email-addresses" class="list-group-item list-group-item-action">
                         Account Email Addresses
                     </a>
  <a href="/my-account/phone-numbers" class="list-group-item list-group-item-action ">
                         Account Phone Numbers
                     </a>
- <a href="/my-account/address-book" class="list-group-item list-group-item-action ">
+ <a href="/my-account/address-book" class="list-group-item list-group-item-action">
                         Address Book
                     </a>
  <a href="/my-account/quotes" class="list-group-item list-group-item-action ">
@@ -104,58 +106,125 @@
  <a href="/my-account/order-history" class="list-group-item list-group-item-action ">
                         Order History
                     </a>
- <a href="/my-account/profile" class="list-group-item list-group-item-action ">
+ <a href="/my-account/profile" class="list-group-item list-group-item-action active">
                         Profile Update
                     </a>
 
                     </div>
                 </div>
-                <!-- Account Recent Orders -->
+                <!-- Email Address Listing -->
                 <div class="col-md-9">
-                     <h2>Recent Orders</h2>
+                    <!-- Message notifications -->
+                    <div class="alert alert-success">Profile updated</div>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-primary d-inline-block mb-4" data-toggle="modal"
+                        data-target="#updateProfile">Edit Profile</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-12 pb-3"> <strong>First Name</strong>
 
-                    <table class="table table-condensed table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th><strong>Order #</strong>
-                                </th>
-                                <th><strong>Date</strong>
-                                </th>
-                                <th><strong>Quantity</strong>
-                                </th>
-                                <th><strong>Status</strong>
-                                </th>
-                                <th><strong>Total</strong>
-                                </th>
-                                <th><strong>View</strong>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>123</td>
-                                <td>1/20/20</td>
-                                <td>2</td>
-                                <td>Not Placed</td>
-                                <td>$38.00</td>
-                                <td><a href="#">View</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>123</td>
-                                <td>1/20/20</td>
-                                <td>2</td>
-                                <td>Not Placed</td>
-                                <td>$38.00</td>
-                                <td><a href="#">View</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                        </div>
+                                        <div class="col-12 pb-3"> <strong>Last Name</strong>
+
+                                        </div>
+                                        <div class="col-12 pb-3"> <strong>Company</strong>
+
+                                        </div>
+                                        <div class="col-12 pb-3"> <strong>Primary Phone</strong>
+
+                                        </div>
+                                        <div class="col-12 pb-3"> <strong>Primary Email</strong>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-12 pb-3">John</div>
+                                        <div class="col-12 pb-3">Doe</div>
+                                        <div class="col-12 pb-3">My Company</div>
+                                        <div class="col-12 pb-3">508-555-5555</div>
+                                        <div class="col-12 pb-3">john.doe@mailinator.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Header Partial -->
+        <!-- Update Profile Modal -->
+        <div class="modal fade" id="updateProfile" tabindex="-1" role="dialog"
+        aria-labelledby="updateProfile" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                         <h5 class="modal-title">Update Profile</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Update profile error message -->
+                        <div class="alert alert-danger">Error updating profile. See errors below.</div>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" name="firstName" class="form-control is-invalid"
+                                        required>
+                                        <div class="invalid-feedback">First Name Required</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" name="lastName" class="form-control is-invalid"
+                                        required>
+                                        <div class="invalid-feedback">Last Name Required</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="company">Company</label>
+                                        <input type="text" id="company" type="text" name="company"
+                                        class="form-control is-invalid">
+                                        <div class="invalid-feedback">Company Required</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="emailAddress">Email Address</label>
+                                        <input type="email" name="emailAddress" class="form-control is-invalid"
+                                        required>
+                                        <div class="invalid-feedback">Email Address Required</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phoneNumber">Phone Number</label>
+                                        <input type="text" id="phoneNumber" type="text" name="phoneNumber"
+                                        class="form-control is-invalid" required>
+                                        <div class="invalid-feedback">First Name Required</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Partial -->
         <footer class="bg-light py-3 border-top">
             <div class="container text-center text-muted">&copy; Slatwall Commerce 2020</div>
         </footer>

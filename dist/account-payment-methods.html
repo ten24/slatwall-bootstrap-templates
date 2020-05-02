@@ -77,7 +77,7 @@
             </div>
         </nav>
         <div class="container my-5">
-             <h1 class="mb-4">Account Address Book</h1>
+             <h1 class="mb-4">Payment Methods</h1>
 
             <div class="row">
                 <!-- Account Sidebar Navigation -->
@@ -88,7 +88,7 @@
  <a href="/my-account/phone-numbers" class="list-group-item list-group-item-action ">
                         Account Phone Numbers
                     </a>
- <a href="/my-account/address-book" class="list-group-item list-group-item-action active">
+ <a href="/my-account/address-book" class="list-group-item list-group-item-action ">
                         Address Book
                     </a>
  <a href="/my-account/quotes" class="list-group-item list-group-item-action ">
@@ -100,7 +100,7 @@
  <a href="/my-account/subscriptions" class="list-group-item list-group-item-action ">
                         My Subscriptions
                     </a>
- <a href="/my-account/payment-methods" class="list-group-item list-group-item-action ">
+ <a href="/my-account/payment-methods" class="list-group-item list-group-item-action active">
                         Payment Methods
                     </a>
  <a href="/my-account/order-history" class="list-group-item list-group-item-action ">
@@ -112,61 +112,40 @@
 
                     </div>
                 </div>
-                <!-- Email Address Listing -->
+                <!-- Payment Method Listing -->
                 <div class="col-md-9">
                     <!-- Message notifications -->
-                    <div class="alert alert-success">Address added/deleted</div>
-                    <div class="alert alert-info">Primary Address updated</div>
-                    <div class="text-right">
-                        <button type="button" class="btn btn-primary d-inline-block mb-4" data-toggle="modal"
-                        data-target="#exampleModal">Add Address</button>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-header text-center"> <small class="font-weight-bold">Primary Address</small>
+                    <div class="alert alert-success">Payment Method added/deleted</div>
+                    <div class="alert alert-info">Payment Method address updated</div>
+                    <div class="alert alert-info">No payment methods saved. Add a payment method.</div>
+                    <button type="button"
+                    class="btn btn-primary float-right mb-4" data-toggle="modal" data-target="#exampleModal">Add Payment Method</button>
+                    <table class="table table-condensed table-bordered table-striped table-responsive-sm">
+                        <tbody>
+                            <tr>
+                                <td>Payment Method Nickname</td>
+                                <td>	<span class="badge badge-primary">Primary</span>
 
-                                </div>
-                                <div class="card-body"> <address>
-                                    Joey Ravioli<br>
-                                    Ravioli Company<br>
-                                    1 Meatball Street<br>
-                                    Apt 1<br>
-                                    Meatball Locality<br>
-                                    Meatballville, MA 01608<br>
-                                    USA
-                                </address>
+                                </td>
+                                <td>	<a href="#" title="Edit Payment Method">Edit</a>
 
-                                </div>
-                                <div class="card-footer d-flex justify-content-between"> <a href="#">Delete</a>
- <a href="#">Edit</a>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>American Express - Ending in ****1233</td>
+                                <td>	<a href="#" title="Set as your primary payment method">Set Primary</a>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-header text-center"> <small class="font-weight-bold"><a href="#">Set Primary Address</a></small>
+                                </td>
+                                <td>	<a href="#" title="Edit Payment Method">Edit</a>
 
-                                </div>
-                                <div class="card-body"> <address>
-                                    Joey Ravioli<br>
-                                    Ravioli Company<br>
-                                    1 Meatball Street<br>
-                                    Apt 1<br>
-                                    Meatball Locality<br>
-                                    Meatballville, MA 01608<br>
-                                    USA
-                                </address>
+                                </td>
+                                <td>	<a href="#" title="Delete Payment Method">Delete</a>
 
-                                </div>
-                                <div class="card-footer d-flex justify-content-between"> <a href="#">Delete</a>
- <a href="#">Edit</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -201,90 +180,136 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <!-- Account Modal -->
+        <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                         <h5 class="modal-title" id="exampleModalLabel">Add / Edit Address</h5>
+                        	<h5 class="modal-title" id="exampleModalLabel">Add Payment Method</h5>
 
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">	<span aria-hidden="true">&times;</span>
 
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="alert alert-success small">Address Saved</div>
-                        <div class="alert alert-danger small">Error Saving Address</div>
                         <form action="">
-                            <div class="row">
+                            <div class="form-row form-group">
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="nickname">Nickname</label>
-                                        <input type="text" class="form-control is-invalid" required>
-                                        <div class="invalid-feedback">Required Field</div>
+                                    <div class="form-group mb-4">
+                                        <label for="checkoutPaymentCardNumber">Card Number</label>
+                                        <input class="form-control is-invalid" id="checkoutPaymentCardNumber"
+                                        type="text" required>
+                                        <div class="invalid-feedback">Invalid Credit Card #</div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control is-invalid" required>
-                                        <div class="invalid-feedback">Required Field</div>
+                                    <div class="form-group mb-4">
+                                        <label for="checkoutPaymentCardName">Name on Card</label>
+                                        <input class="form-control is-invalid" id="checkoutPaymentCardName"
+                                        type="text" required>
+                                        <div class="invalid-feedback">Name Required</div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="company">Company</label>
-                                        <input type="text" class="form-control is-invalid" required>
-                                        <div class="invalid-feedback">Required Field</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="Street Address">Street Address</label>
-                                        <input type="text" class="form-control is-invalid"
+                                <div class="col-12 col-md-4">
+                                    <div class="form-group mb-md-0">
+                                        <label for="checkoutPaymentMonth">Expiration Month</label>
+                                        <select class="custom-select is-invalid" id="checkoutPaymentMonth"
                                         required>
-                                        <div class="invalid-feedback">Required Field</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="Street Address2">Street Address 2</label>
-                                        <input type="text" class="form-control" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="city">City</label>
-                                        <input type="text" class="form-control is-invalid" required>
-                                        <div class="invalid-feedback">Required Field</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="state">State</label>
-                                        <input type="text" class="form-control is-invalid" required>
-                                        <div class="invalid-feedback">Required Field</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="postalCode">Postal Code</label>
-                                        <input type="text" class="form-control is-invalid"
-                                        required>
-                                        <div class="invalid-feedback">Required Field</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="country">Country</label>
-                                        <select class="form-control is-invalid" required>
-                                            <option value="USA"></option>
-                                            <option value="USA">USA</option>
+                                            <option></option>
+                                            <option>January</option>
+                                            <option>February</option>
+                                            <option>March</option>
                                         </select>
-                                        <div class="invalid-feedback">Required Field</div>
+                                        <div class="invalid-feedback">Expiration Month Required</div>
                                     </div>
                                 </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-group mb-md-0">
+                                        <label for="checkoutPaymentCardYear">Expiration Year</label>
+                                        <select class="custom-select is-invalid" id="checkoutPaymentCardYear"
+                                        required>
+                                            <option></option>
+                                            <option>2017</option>
+                                            <option>2018</option>
+                                            <option>2019</option>
+                                        </select>
+                                        <div class="invalid-feedback">Expiration Year Required</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-group">
+                                        <label for="checkoutPaymentCardCVV">CVV</label>
+                                        <input class="form-control is-invalid" id="checkoutPaymentCardCVV"
+                                        type="text" required>
+                                        <div class="invalid-feedback">CVV # Required</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <h4>Billing Address:</h4>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="checkout-fn">First Name</label>
+                                        <input class="form-control is-invalid" type="text" id="checkout-fn">
+                                        <div class="invalid-feedback">First Required</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="checkout-ln">Last Name</label>
+                                        <input class="form-control is-invalid" type="text" id="checkout-ln">
+                                        <div class="invalid-feedback">Last Name Required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="checkout-address-1">Street Address 1</label>
+                                        <input class="form-control is-invalid" type="text"
+                                        id="checkout-address-1">
+                                        <div class="invalid-feedback">Street Address Required</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="checkout-address-2">Street Address 2</label>
+                                        <input class="form-control" type="text" id="checkout-address-2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="checkout-city">City</label>
+                                        <input class="form-control is-invalid" type="text" id="checkout-city">
+                                        <div class="invalid-feedback">City Required</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="checkout-state">State</label>
+                                        <select class="form-control custom-select is-invalid" id="checkout-state">
+                                            <option>Choose State</option>
+                                        </select>
+                                        <div class="invalid-feedback">State Required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="checkout-zip">ZIP Code</label>
+                                        <input class="form-control is-invalid" type="text" id="checkout-zip">
+                                        <div class="invalid-feedback">Zip Code Required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group w-50 mt-3">
+                                <button class="btn btn-secondary btn-block" type="submit" disabled="">Save Address <i class="fas fa-circle-notch fa-spin"></i>
+                                </button>
                             </div>
                         </form>
                     </div>
