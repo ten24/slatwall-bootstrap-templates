@@ -119,15 +119,53 @@
                                     required>
                                     <div class="invalid-feedback">Password Required</div>
                                 </div>
-                                <div class="form-group w-50">
-                                    <!-- Toggle disabled attribute & spinner icon after form submit validation
-                                    & loading -->
-                                    <button class="btn btn-secondary btn-block" type="submit" disabled>Continue <i class="fas fa-circle-notch fa-spin"></i>
-                                    </button>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <!-- Toggle disabled attribute & spinner icon after form submit validation
+                                        & loading -->
+                                        <button class="btn btn-secondary btn-block" type="submit" disabled>Continue <i class="fas fa-circle-notch fa-spin"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6 text-right">	<a id="pills-password-tab" class="btn btn-link" data-toggle="pill" href="#pills-password"
+                                        aria-expanded="false" aria-controls="pills-password">
+											Forgot Password
+										</a>
+
+                                    </div>
                                 </div>
                             </form>
                         </div>
                         <!-- /End Account Login -->
+                        <!-- Forgot Password -->
+                        <div class="tab-pane fade" id="pills-password" role="tabpanel" aria-labelledby="pills-password-tab">
+                             <h4>Forgot Password</h4>
+
+                            <!-- Forgot Password error display message -->
+                            <div class="alert alert-danger small">Error retreiving password. Please try again.</div>
+                            <div class="alert alert-success small">Please check your email with instructions to reset your password.</div>
+                            <form
+                            action="">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control is-invalid"
+                                    required>
+                                    <div class="invalid-feedback">Email Address Required</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-primary btn-block" disabled>Recover Password <i class="fas fa-circle-notch fa-spin"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <!-- Back to Login --> <a id="pills-login-tab" class="btn btn-link" data-toggle="pill" href="#pills-login"
+                                        aria-expanded="false" aria-controls="pills-login">
+			                                Back to Login
+			                            </a>
+
+                                    </div>
+                                </div>
+                                </form>
+                        </div>
                         <!-- Create Account Tab -->
                         <div class="tab-pane fade" id="pills-create-account" role="tabpanel" aria-labelledby="pills-create-account-tab">
                             <!-- Create Account Form -->
