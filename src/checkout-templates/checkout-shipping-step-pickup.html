@@ -1,0 +1,101 @@
+<partial src="header.html" title="Checkout"></partial>
+        <div class="container mb-5">
+            <!-- Page Title -->
+            <div class="mt-4 d-flex justify-content-between align-items-center">
+                 <h1>Checkout</h1>
+                 <a href="#" class="btn btn-link btn-sm">Go Back to My Cart</a>
+            </div>
+            <!-- Start Row -->
+            <div class="row mt-3">
+                <!-- Start Body -->
+                <div class="col-xl-7 col-md-8">
+                    <!-- Shipping Info -->
+                     <h3 class="mb-3 pt-3 pb-3 border-bottom">Shipping</h3>
+
+                    <!-- Display Pickup Profile -->
+                    <div id="shippingAddressBook" class="collapse show multi-collapse">
+                        <h5 class="text-secondary my-4">Store Pickup</h5>
+
+                        <div class="row ">
+                            <div class="col-md-12 mb-2">
+                                <h5>Your order can be picked up in store.</h5>
+                                <p>Please visit out store for to pick up your order. Please bring a copy of your receipt.</p>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-md-6 mb-2">
+                                <button class="btn btn-primary" type="button">Continue to Payment</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /End Body -->
+                <!-- Sidebar -->
+                <div class="offset-xl-1 col-xl-4 col-md-4">
+                    <!-- Order Items -->
+                    	<h3 class="mb-3 pt-3 pb-3 border-bottom">Order Items</h3>
+
+                    <ul class="list-unstyled mb-5">
+                        <li class="media mb-4 pb-4 border-bottom">
+                            <img src="https://via.placeholder.com/90x90" alt="Product Name" class="img-fluid mr-3">
+                            <div class="media-body"> <a class="text-body font-weight-bold" href="#">Product Name</a>
+
+                                <br> <span class="text-muted">$49.00</span>
+
+                                <br> <small>Qty: 2</small>
+
+                                <br> <small>Color: Brown</small>
+
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="https://via.placeholder.com/90x90" alt="Product Name" class="img-fluid mr-3">
+                            <div class="media-body"> <a class="text-body font-weight-bold" href="#">Product Name</a>
+
+                                <br> <span class="text-muted">$49.00</span>
+
+                                <br> <small>Qty: 2</small>
+
+                                <br> <small>Color: Brown</small>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /End Order Items -->
+                    <!-- Order Totals -->
+                    <div class="bg-light p-4 mb-5">
+                        <ul class="list-unstyled">
+                            <li class="d-flex mb-3 pb-3 border-bottom">	<span>Subtotal</span>  <span class="ml-auto font-size-sm">$89.00</span>
+
+                            </li>
+                            <li class="d-flex mb-3 pb-3 border-bottom">	<span>Tax</span>  <span class="ml-auto font-size-sm">$00.00</span>
+
+                            </li>
+                            <li class="d-flex mb-3 pb-3 border-bottom">	<span>Discount</span>  <span class="ml-auto font-size-sm">- $10.00</span>
+
+                            </li>
+                            <li class="d-flex mb-3 pb-3 border-bottom">	<span>Shipping</span>  <span class="ml-auto font-size-sm">$0.00</span>
+
+                            </li>
+                            <li class="d-flex font-size-lg font-weight-bold">	<span>Total</span>  <span class="ml-auto">$97.00</span>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/End Order Totals -->
+                    <!-- Place Order: Toggle disabled attribute after form submit validation
+                    to continue -->
+                    <button type="submit" class="btn btn-block btn-primary" disabled>Place Order <i class="fas fa-circle-notch fa-spin"></i>
+
+                    </button>
+                </div>
+                <!-- /End Sidebar -->
+            </div>
+            <!-- /End Row -->
+        </div>
+        <!-- /End Container -->
+        <partial src="footer.html" ></partial>
+    </body>
+</html>
