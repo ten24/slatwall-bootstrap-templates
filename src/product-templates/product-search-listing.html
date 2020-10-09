@@ -1,19 +1,24 @@
 <!-- Header Partial -->
 <partial src="header.html" title="Product Listing"></partial>
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container text-center">
-				<h1 class="display-4">Product Listing</h1>
-				<p class="lead">Default product listing display.</p>
-			</div>
-		</div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+                <h1 class="display-4">Global Product Search</h1>
+                <div class="d-flex justify-content-center">
+                    <form class="form-inline mt-2">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <input type="password" class="form-control form-control-lg" id="inputPassword2" placeholder="Search Products..." required>
+                          </div>
+                        <button type="submit" class="btn btn-primary btn-lg mb-2">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 		<div class="container my-5">
 			<div class="alert alert-success">Item Added to Cart</div>
 			<div class="alert alert-danger">There was an error adding item to cart</div>
-			<div class="row">
-				<div class="col-sm-3">
-					<h6><strong>3</strong> Available Products</h6>
-				</div>
+			<div class="row justify-content-between">
 				<div class="col-sm-6">
+					<h6>Your search for <strong>"search terms"</strong> returned <strong>3</strong> available products</h6>
 				</div>
 				<div class="col-sm-2 offset-md-1">
 					<div class="dropdown">
@@ -35,8 +40,7 @@
 			</div>
 
             <!-- Show Applied Filters -->
-            <a href="#" class="badge badge-secondary d-inline-block mr-2">Brand1 &times;</a>
-            <a href="#" class="badge badge-secondary d-inline-block mr-2">Category1 &times;</a>
+            <a href="#" class="badge badge-secondary d-inline-block mr-2">Category Name &times;</a>
             <a href="#" class="badge badge-secondary d-inline-block mr-2">Product Type1 &times;</a>
 
 			<div class="row mt-3">

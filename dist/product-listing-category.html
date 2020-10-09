@@ -101,9 +101,9 @@
         </nav>
         <div class="jumbotron jumbotron-fluid">
             <div class="container text-center">
-                	<h1 class="display-4">Product Listing</h1>
+                 <h1 class="display-4">Category Listing</h1>
 
-                <p class="lead">Default product listing display.</p>
+                <p class="lead">Product listing display for specific category.</p>
             </div>
         </div>
         <div class="container my-5">
@@ -137,261 +137,258 @@
                     </div>
                 </div>
             </div>
-            <!-- Show Applied Filters --> <a href="#" class="badge badge-secondary d-inline-block mr-2">Brand1 &times;</a>
+            <!-- Show Applied Filters --> <a href="#" class="badge badge-secondary d-inline-block mr-2">Product Type &times;</a>
 
-            <a
-            href="#" class="badge badge-secondary d-inline-block mr-2">Category1 &times;</a> <a href="#" class="badge badge-secondary d-inline-block mr-2">Product Type1 &times;</a>
-
-                <div
-                class="row mt-3">
-                    <div class="col-lg-3">
-                        <div class="accordion mb-4" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="heading1">
-                                     <h5 class="mb-0">
+            <div
+            class="row mt-3">
+                <div class="col-lg-3">
+                    <div class="accordion mb-4" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="heading1">
+                                 <h5 class="mb-0">
                     				<button class="btn btn-link p-0" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                     				Search
                     				</button>
                     			</h5>
 
-                                </div>
-                                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <form action="">
-                                            <input type="text" id="search" name="search" class="form-control form-control-sm"
-                                            required>
-                                            <input type="submit" id="search" class="btn btn-sm btn-block btn-secondary mt-3"
-                                            value="Search">
-                                        </form>
-                                    </div>
+                            </div>
+                            <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <form action="">
+                                        <input type="text" id="search" name="search" class="form-control form-control-sm"
+                                        required>
+                                        <input type="submit" id="search" class="btn btn-sm btn-block btn-secondary mt-3"
+                                        value="Search">
+                                    </form>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="heading2">
-                                     <h5 class="mb-0">
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                 <h5 class="mb-0">
                     				<button class="btn btn-link p-0" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
                     				Price
                     				</button>
                     			</h5>
 
-                                </div>
-                                <div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="Price0^30" value="">
-                                            <label class="form-check-label" for="Price0^30">Under $30</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="Price30^75" value="">
-                                            <label class="form-check-label" for="Price30^75">$30-$75</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="Price300" value="">
-                                            <label class="form-check-label" for="Price300">$300+</label>
-                                        </div>
-                                        <form action="">
-                                            <div class="form-row mt-4">
-                                                <div class="col">
-                                                    <input type="text" id="min" class="form-control form-control-sm" placeholder="Min"
-                                                    value="">
-                                                </div>
-                                                <div class="col">
-                                                    <input type="text" id="max" class="form-control form-control-sm" placeholder="Max"
-                                                    value="">
-                                                </div>
-                                            </div>
-                                            <input type="submit" id="submit" class="btn btn-sm btn-block btn-secondary mt-3"
-                                            value="Apply" required>
-                                        </form>
+                            </div>
+                            <div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="Price0^30" value="">
+                                        <label class="form-check-label" for="Price0^30">Under $30</label>
                                     </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="Price30^75" value="">
+                                        <label class="form-check-label" for="Price30^75">$30-$75</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="Price300" value="">
+                                        <label class="form-check-label" for="Price300">$300+</label>
+                                    </div>
+                                    <form action="">
+                                        <div class="form-row mt-4">
+                                            <div class="col">
+                                                <input type="text" id="min" class="form-control form-control-sm" placeholder="Min"
+                                                value="">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" id="max" class="form-control form-control-sm" placeholder="Max"
+                                                value="">
+                                            </div>
+                                        </div>
+                                        <input type="submit" id="submit" class="btn btn-sm btn-block btn-secondary mt-3"
+                                        value="Apply" required>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="heading3">
-                                     <h5 class="mb-0">
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading3">
+                                 <h5 class="mb-0">
                     				<button class="btn btn-link p-0" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
                     				Brands
                     				</button>
                     			</h5>
 
-                                </div>
-                                <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="brandName1" value="">
-                                            <label class="form-check-label" for="brandName1">Brand Name 1</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="brandName2" value="">
-                                            <label class="form-check-label" for="brandName2">Brand Name 2</label>
-                                        </div>
+                            </div>
+                            <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brandName1" value="">
+                                        <label class="form-check-label" for="brandName1">Brand Name 1</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brandName2" value="">
+                                        <label class="form-check-label" for="brandName2">Brand Name 2</label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="heading4">
-                                     <h5 class="mb-0">
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading4">
+                                 <h5 class="mb-0">
                     				<button class="btn btn-link p-0" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
                     				Category
                     				</button>
                     			</h5>
 
-                                </div>
-                                <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="category1">
-                                            <label class="form-check-label" for="category1">Category 1</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="category2">
-                                            <label class="form-check-label" for="category2">Category 2</label>
-                                        </div>
+                            </div>
+                            <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="category1">
+                                        <label class="form-check-label" for="category1">Category 1</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="category2">
+                                        <label class="form-check-label" for="category2">Category 2</label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="heading5">
-                                     <h5 class="mb-0">
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading5">
+                                 <h5 class="mb-0">
                     				<button class="btn btn-link p-0" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
                     				Product Type
                     				</button>
                     			</h5>
 
-                                </div>
-                                <div id="collapse5" class="collapse show" aria-labelledby="heading5" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="productType1">
-                                            <label class="form-check-label" for="productType1">Product Type 1</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="productType2">
-                                            <label class="form-check-label" for="productType2">Product Type 2</label>
-                                        </div>
+                            </div>
+                            <div id="collapse5" class="collapse show" aria-labelledby="heading5" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="productType1">
+                                        <label class="form-check-label" for="productType1">Product Type 1</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="productType2">
+                                        <label class="form-check-label" for="productType2">Product Type 2</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">	<a href="#">
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">	<a href="#">
 								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
 								</a>
 
-                                    <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
+                                <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
 
-                                        	<h5><a href="#">Product Name</a></h5>
+                                    	<h5><a href="#">Product Name</a></h5>
 	<s class="float-right small">$350.00</s>
 
-                                        <p>$300.00</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <form action="" method="post">
-                                            <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
-                                        </form>
-                                    </div>
+                                    <p>$300.00</p>
+                                </div>
+                                <div class="card-footer">
+                                    <form action="" method="post">
+                                        <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">	<a href="#">
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">	<a href="#">
 								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
 								</a>
 
-                                    <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
+                                <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
 
-                                        	<h5><a href="#">Product Name</a></h5>
+                                    	<h5><a href="#">Product Name</a></h5>
 	<s class="float-right small">$350.00</s>
 
-                                        <p>$300.00</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <form action="" method="post">
-                                            <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
-                                        </form>
-                                    </div>
+                                    <p>$300.00</p>
+                                </div>
+                                <div class="card-footer">
+                                    <form action="" method="post">
+                                        <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">	<a href="#">
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">	<a href="#">
 								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
 								</a>
 
-                                    <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
+                                <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
 
-                                        	<h5><a href="#">Product Name</a></h5>
+                                    	<h5><a href="#">Product Name</a></h5>
 	<s class="float-right small">$350.00</s>
 
-                                        <p>$300.00</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <form action="" method="post">
-                                            <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
-                                        </form>
-                                    </div>
+                                    <p>$300.00</p>
+                                </div>
+                                <div class="card-footer">
+                                    <form action="" method="post">
+                                        <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">	<a href="#">
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">	<a href="#">
 								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
 								</a>
 
-                                    <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
+                                <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
 
-                                        	<h5><a href="#">Product Name</a></h5>
+                                    	<h5><a href="#">Product Name</a></h5>
 	<s class="float-right small">$350.00</s>
 
-                                        <p>$300.00</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <form action="" method="post">
-                                            <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
-                                        </form>
-                                    </div>
+                                    <p>$300.00</p>
+                                </div>
+                                <div class="card-footer">
+                                    <form action="" method="post">
+                                        <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">	<a href="#">
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">	<a href="#">
 								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
 								</a>
 
-                                    <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
+                                <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
 
-                                        	<h5><a href="#">Product Name</a></h5>
+                                    	<h5><a href="#">Product Name</a></h5>
 	<s class="float-right small">$350.00</s>
 
-                                        <p>$300.00</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <form action="" method="post">
-                                            <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
-                                        </form>
-                                    </div>
+                                    <p>$300.00</p>
+                                </div>
+                                <div class="card-footer">
+                                    <form action="" method="post">
+                                        <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">	<a href="#">
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">	<a href="#">
 								    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
 								</a>
 
-                                    <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
+                                <div class="card-body">	<small><a href="#" class="text-secondary">Product Type Name</a></small>
 
-                                        	<h5><a href="#">Product Name</a></h5>
+                                    	<h5><a href="#">Product Name</a></h5>
 	<s class="float-right small">$350.00</s>
 
-                                        <p>$300.00</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <form action="" method="post">
-                                            <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
-                                        </form>
-                                    </div>
+                                    <p>$300.00</p>
+                                </div>
+                                <div class="card-footer">
+                                    <form action="" method="post">
+                                        <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
         </div>
         <!-- Pagination -->
         <nav class="py-2" aria-label="Pagination">
