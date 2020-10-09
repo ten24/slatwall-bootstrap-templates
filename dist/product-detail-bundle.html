@@ -106,11 +106,11 @@
             <!-- Portfolio Item Row -->
             <div class="row">
                 <!-- Product Image Gallery -->
-                <div class="col-md-7">
+                <div class="col-md-4">
                     <!-- Default Product Image -->
                     <img class="img-fluid rounded d-block mb-4" src="http://placehold.it/600x400"
                     alt="Product Name">
-                    <!-- Secondary Product Image Gallery --> <a href="#"><img src="http://placehold.it/100x100" alt="Product Name" class="img-thumbnail mr-3 mb-3"></a>
+                    <!-- Secondary Product Image Gallery --><a href="#"><img src="http://placehold.it/100x100" alt="Product Name" class="img-thumbnail mr-3 mb-3"></a>
 
                     <a
                     href="#">
@@ -123,8 +123,8 @@
                             </a>
                 </div>
                 <!-- Product Description -->
-                <div class="col-md-5">
-                     <h1>Product Name</h1>
+                <div class="col-md-8">
+                     <h1>Product Bundle Name</h1>
 
                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
                         ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
@@ -133,31 +133,76 @@
                     <form action="">
                         <div class="card mt-3">
                             <div class="card-body">
-                                 <h4 class="text-left">$9.99 <small><del>$12.99</del></small></h4>
-
-                                <form action="">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <div class="form-group">
-                                                <label for="option">Select Option</label>
-                                                <select class="form-control" id="option" required>
-                                                    <option>Option 1</option>
-                                                    <option>Option 2</option>
-                                                    <option>Option 3</option>
-                                                    <option disabled>Option 4 (Out of Stock)</option>
-                                                </select>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label for="option">Bundle Group Name:</label>
+                                            <div><small>Select <span class="badge badge-primary">1</span></small>
                                             </div>
+                                            <select class="form-control" id="option" required>
+                                                <option>Option 1 - $9.99</option>
+                                                <option>Option 2 - $10.99</option>
+                                                <option>Option 3</option>
+                                                <option disabled>Option 4 (Out of Stock)</option>
+                                            </select>
                                         </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label for="quantity">Quantity</label>
-                                                <input type="number" class="form-control" id="quantity"
-                                                aria-describedby="quantity" value="1" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label for="option">Bundle Group Name:</label>
+                                            <div><small>Select at least <span class="badge badge-primary">1</span>. Max <span class="badge badge-primary">2</span></small>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-md-8">Cras justo odio - $9.99</div>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control form-control-sm" value="0">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-md-8">Cras justo odio - $12.99</div>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control form-control-sm" value="0">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Add to cart</button>
-                                </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label for="option">Bundle Group Name:</label>
+                                            <div><small>Optional. Max <span class="badge badge-primary">2</span></small>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-md-8">Cras justo odio - $9.99</div>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control form-control-sm" value="0">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-md-8">Cras justo odio - $12.99</div>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control form-control-sm" value="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-8">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Add to cart</button>
                             </div>
                         </div>
                     </form>
@@ -165,8 +210,10 @@
                         <ul>
                             <li>Code: ProductCode</li>
                             <li>Brand: <a href="#/brand/brandURLTitle#">Brand Name</a>
+
                             </li>
                             <li>Type: <a href="#/productType/productTypeURLTitle#">Product Type Name</a>
+
                             </li>
                         </ul>
                         <div class="mt-1">Categories:
@@ -253,9 +300,7 @@
                 </div>
             </div>
         </div>
-
       </div>
-
     </div>
 
     <!-- Footer Partial -->

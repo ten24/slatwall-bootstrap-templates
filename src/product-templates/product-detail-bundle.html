@@ -1,0 +1,199 @@
+<!-- Header Partial -->
+<partial src="header.html" title="Product Detail"></partial>
+<div class="container my-5">
+    <!-- Add to Cart Success/Error message -->
+    <div class="alert alert-success">Item Added to Cart</div>
+    <div class="alert alert-danger">There was an error adding item to cart</div>
+    <!-- Portfolio Item Row -->
+    <div class="row">
+        <!-- Product Image Gallery -->
+        <div class="col-md-4">
+            <!-- Default Product Image -->
+            <img class="img-fluid rounded d-block mb-4" src="http://placehold.it/600x400" alt="Product Name">
+            <!-- Secondary Product Image Gallery --><a href="#"><img src="http://placehold.it/100x100" alt="Product Name" class="img-thumbnail mr-3 mb-3"></a>
+
+            <a href="#">
+                        <img src="http://placehold.it/100x100" alt="Product Name" class="img-thumbnail mr-3 mb-3">
+                        </a> <a href="#"><img src="http://placehold.it/100x100" alt="Product Name" class="img-thumbnail mr-3 mb-3"></a>
+
+            <a href="#">
+                            <img src="http://placehold.it/100x100" alt="Product Name" class="img-thumbnail mr-3 mb-3">
+                            </a>
+        </div>
+        <!-- Product Description -->
+        <div class="col-md-8">
+            <h1>Product Bundle Name</h1>
+            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis.</p>
+
+            <form action="">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="option">Bundle Group Name:</label>
+                                    <div><small>Select <span class="badge badge-primary">1</span></small></div>
+                                    <select class="form-control" id="option" required>
+                                                <option>Option 1 - $9.99</option>
+                                                <option>Option 2 - $10.99</option>
+                                                <option>Option 3</option>
+                                                <option disabled>Option 4 (Out of Stock)</option>
+                                            </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="option">Bundle Group Name:</label>
+                                    <div><small>Select at least <span class="badge badge-primary">1</span>. Max <span class="badge badge-primary">2</span></small></div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-md-8">Cras justo odio - $9.99</div>
+                                        <div class="col-md-4"><input type="text" class="form-control form-control-sm" value="0"></div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-md-8">Cras justo odio - $12.99</div>
+                                        <div class="col-md-4"><input type="text" class="form-control form-control-sm" value="0"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="option">Bundle Group Name:</label>
+                                    <div><small>Optional. Max <span class="badge badge-primary">2</span></small></div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-md-8">Cras justo odio - $9.99</div>
+                                        <div class="col-md-4"><input type="text" class="form-control form-control-sm" value="0"></div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-md-8">Cras justo odio - $12.99</div>
+                                        <div class="col-md-4"><input type="text" class="form-control form-control-sm" value="0"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-md-8">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+                    </div>
+                </div>
+
+            </form>
+            <div class="mt-2 mb-4">
+                <ul>
+                    <li>Code: ProductCode</li>
+                    <li>Brand: <a href="#/brand/brandURLTitle#">Brand Name</a>
+                    </li>
+                    <li>Type: <a href="#/productType/productTypeURLTitle#">Product Type Name</a>
+                    </li>
+                </ul>
+                <div class="mt-1">Categories:
+                    <br> <a href="#/category/categoryUrlTitle#">Category Name (1)</a>, <a href="#/category/categoryUrlTitle#">Category Name (2)</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Reviews -->
+    <h2 class="mt-5 mb-4">Reviews</h3>
+
+    <div class="card mb-4">
+		<div class="card-body">
+			<h5>Review 1</h5>
+			<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            <small class="text-muted">Posted by John Doe on 1/20/2020</small>
+        </div>
+    </div>
+    <div class="card">
+		<div class="card-body">
+			<h5>Review 2</h5>
+			<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            <small class="text-muted">Posted by John Doe on 1/20/2020</small>
+        </div>
+    </div>
+
+    <!-- Related Projects Row -->
+    <h2 class="mt-5 mb-4">Related Products</h3>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100">
+                <a href="#">
+                    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+                </a>
+                <div class="card-body">
+                    <small><a href="#" class="text-secondary">Product Type Name</a></small>
+                    <h5><a href="#">Product Name</a></h5>
+                    <s class="float-right small">$350.00</s>
+                    <p>$300.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100">
+                <a href="#">
+                    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+                </a>
+                <div class="card-body">
+                    <small><a href="#" class="text-secondary">Product Type Name</a></small>
+                    <h5><a href="#">Product Name</a></h5>
+                    <s class="float-right small">$350.00</s>
+                    <p>$300.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100">
+                <a href="#">
+                    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+                </a>
+                <div class="card-body">
+                    <small><a href="#" class="text-secondary">Product Type Name</a></small>
+                    <h5><a href="#">Product Name</a></h5>
+                    <s class="float-right small">$350.00</s>
+                    <p>$300.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card h-100">
+                <a href="#">
+                    <img src="http://placehold.it/510x350" class="img-fluid" alt="Product1">
+                </a>
+                <div class="card-body">
+                    <small><a href="#" class="text-secondary">Product Type Name</a></small>
+                    <h5><a href="#">Product Name</a></h5>
+                    <s class="float-right small">$350.00</s>
+                    <p>$300.00</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Partial -->
+    <partial src="footer.html"></partial>
+    </body>
+</html>

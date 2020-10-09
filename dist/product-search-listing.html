@@ -101,20 +101,27 @@
         </nav>
         <div class="jumbotron jumbotron-fluid">
             <div class="container text-center">
-                	<h1 class="display-4">Product Listing</h1>
+                 <h1 class="display-4">Global Product Search</h1>
 
-                <p class="lead">Default product listing display.</p>
+                <div class="d-flex justify-content-center">
+                    <form class="form-inline mt-2">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <input type="password" class="form-control form-control-lg" id="inputPassword2"
+                            placeholder="Search Products..." required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg mb-2">Search</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="container my-5">
             <div class="alert alert-success">Item Added to Cart</div>
             <div class="alert alert-danger">There was an error adding item to cart</div>
-            <div class="row">
-                <div class="col-sm-3">
-                    	<h6><strong>3</strong> Available Products</h6>
+            <div class="row justify-content-between">
+                <div class="col-sm-6">
+                    	<h6>Your search for <strong>"search terms"</strong> returned <strong>3</strong> available products</h6>
 
                 </div>
-                <div class="col-sm-6"></div>
                 <div class="col-sm-2 offset-md-1">
                     <div class="dropdown">
                         <button class="btn btn-secondary btn-sm dropdown-toggle float-md-right"
@@ -137,13 +144,11 @@
                     </div>
                 </div>
             </div>
-            <!-- Show Applied Filters --> <a href="#" class="badge badge-secondary d-inline-block mr-2">Brand1 &times;</a>
+            <!-- Show Applied Filters --> <a href="#" class="badge badge-secondary d-inline-block mr-2">Category Name &times;</a>
 
             <a
-            href="#" class="badge badge-secondary d-inline-block mr-2">Category1 &times;</a> <a href="#" class="badge badge-secondary d-inline-block mr-2">Product Type1 &times;</a>
-
-                <div
-                class="row mt-3">
+            href="#" class="badge badge-secondary d-inline-block mr-2">Product Type1 &times;</a>
+                <div class="row mt-3">
                     <div class="col-lg-3">
                         <div class="accordion mb-4" id="accordionExample">
                             <div class="card">
@@ -392,28 +397,28 @@
                             </div>
                         </div>
                     </div>
-        </div>
-        <!-- Pagination -->
-        <nav class="py-2" aria-label="Pagination">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled">	<a class="page-link" href="#" aria-label="Previous">
+                </div>
+                <!-- Pagination -->
+                <nav class="py-2" aria-label="Pagination">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">	<a class="page-link" href="#" aria-label="Previous">
             			<span aria-hidden="true">&laquo;</span>
             			</a>
 
-                </li>
-                <li class="page-item active disabled"><a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a>
-                </li>
-                <li class="page-item">	<a class="page-link" href="#" aria-label="Next">
+                        </li>
+                        <li class="page-item active disabled"><a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">	<a class="page-link" href="#" aria-label="Next">
             			<span aria-hidden="true">&raquo;</span>
             			</a>
 
-                </li>
-            </ul>
-        </nav>
+                        </li>
+                    </ul>
+                </nav>
         </div>
         <!-- Footer Partial -->
         <footer class="bg-light py-3 border-top">
