@@ -1,0 +1,514 @@
+<!-- Header Partial -->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Product Listing</title>
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+        crossorigin="anonymous">
+        <!-- FontAwesome 5 CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous"
+        />
+    </head>
+    <!-- Body-->
+    
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom py-3">
+            <div class="container my-2">
+                <!-- Slatwall Logo --> <a class="navbar-brand" href="#">
+						<img src="https://www.slatwallcommerce.com/default/themes/velocity/assets/images/logo-grey-2x.png" width="185" alt="Slatwall Commerce">
+					</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">	<a class="nav-link" href="#">Product Listing</a>
+
+                        </li>
+                        <li class="nav-item">	<a class="nav-link" href="#">Checkout</a>
+
+                        </li>
+                        <!-- Header Mini Shopping Cart Dropdown -->
+                        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          Cart
+					        </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <!-- Show order items if exist -->
+                                <ul class="list-unstyled p-3" style="width: 300px;">
+                                    <li class="media mb-3">
+                                        <img src="https://via.placeholder.com/45x45" alt="..." class="align-self-start img-fluid mr-2">
+                                        <div class="media-body"> <a class="text-body font-weight-bold small" href="#">Product Name</a>
+
+                                            <a
+                                            href="#" class="float-right text-secondary"><i class="far fa-times-circle"></i>
+
+                                                </a>
+                                                <br> <span class="text-muted small">$49.00</span>
+ <small>Qty: 2</small>
+
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img src="https://via.placeholder.com/45x45" alt="..." class="align-self-start img-fluid mr-2">
+                                        <div class="media-body"> <a class="text-body font-weight-bold small" href="#">Product Name</a>
+
+                                            <a
+                                            href="#" class="float-right text-secondary"><i class="far fa-times-circle"></i>
+
+                                                </a>
+                                                <br> <span class="text-muted small">$49.00</span>
+ <small>Qty: 2</small>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- Show empty cart message if no order items exist -->
+                                <div class="alert alert-secondary m-2 small">There are no items in your cart.</div>
+                                <!-- Show item removed from mini
+                                cart message -->
+                                <div class="alert alert-info m-2 small">Item removed from your cart.</div>
+                                <!-- View Shopping Cart Link --> <a href="#" class="btn btn-link btn-block text-center"><small>View Shopping Cart</small></a>
+
+                            </div>
+                        </li>
+                        <!-- /End Mini Cart Dropdown -->
+                        <li class="nav-item">	<a class="nav-link" href="#">My Account</a>
+
+                        </li>
+                        <li class="nav-item">	<a class="nav-link" href="#">Logout</a>
+
+                        </li>
+                    </ul>
+                    <!-- Product Search -->
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                        aria-label="Search" required>
+                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+                 <h1 class="display-4">Subscription Product Name</h1>
+
+            </div>
+        </div>
+        <div class="container my-5">
+            <!-- Display Product Image and product description -->
+            <div class="row justify-content-center my-4 pb-5 mb-5">
+                <div class="col-lg-4">
+                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Product SKU Image">
+                </div>
+                <div class="col-lg-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in rutrum
+                        diam. Donec rutrum auctor odio fringilla volutpat. Nulla rhoncus auctor
+                        condimentum. Etiam at viverra mauris, sit amet cursus erat. Nullam eros
+                        urna, varius sed imperdiet eu, iaculis quis ex.</p>
+                    <p>Donec scelerisque aliquet interdum. Curabitur dignissim fermentum euismod.
+                        Donec rutrum auctor odio fringilla volutpat. Nulla rhoncus auctor condimentum.</p>
+                </div>
+            </div>
+            <!-- Display Subscription Product SKUs by subscription term -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Product SKU Image">
+                        <div class="card-body">
+                            <!-- Subscription Term -->
+                             <h5 class="card-title">Monthly Subscription</h5>
+
+                            <!-- SKU Description -->
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida
+                                scelerisque ultricies.</p>
+                            <!-- SKU List Price --> <s class="float-right small">$9.99</s>
+
+                            <!-- SKU Price -->
+                            <p>$7.99 <small class="text-muted">/ month</small>
+                            </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Subscribe Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Product SKU Image">
+                        <div class="card-body">
+                            <!-- Subscription Term -->
+                             <h5 class="card-title">Yearly Subscription</h5>
+
+                            <!-- SKU Description -->
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida
+                                scelerisque ultricies.</p>
+                            <!-- SKU List Price --> <s class="float-right small">$80.00</s>
+
+                            <!-- SKU Price -->
+                            <p>$59.99 <small class="text-muted">/ year</small>
+                            </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Subscribe Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Partial -->
+        <footer class="bg-light py-3 border-top">
+            <div class="container text-center text-muted">&copy; Slatwall Commerce 2020</div>
+        </footer>
+        <!-- Terms & Conditions Modal -->
+        <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModal"
+        aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                         <h5 class="modal-title" id="termsModal">Terms & Conditions</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Terms & Conditions Content Body</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <!-- Subscription Checkout Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                         <h5 class="modal-title" id="staticBackdropLabel">Complete Your Order</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Order Item Details -->
+                        <div class="p-3 mb-4 bg-light text-center">
+                             <h6>Subscription Product Name</h6>
+
+                            <p class="mb-0">$7.99 <small class="text-muted">/ monthly subscription</small>
+                            </p>
+                        </div>
+                        <!-- Account Login / Create Account -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- Account Login -->
+                            <div class="tab-pane fade show active" id="pills-login" role="tabpanel"
+                            aria-labelledby="pills-login-tab">
+                                 <h6 class="font-weight-bold">Account Information</h6>
+
+                                <p>Login with your account to continue, or <a id="pills-create-account-tab"
+                                    data-toggle="pill" href="#pills-create-account">create a new account</a>.</p>
+                                <div
+                                class="alert alert-danger small">The username or password that you entered is invalid.</div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control is-invalid"
+                                    required>
+                                    <div class="invalid-feedback">Please enter a valid email address</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control is-invalid"
+                                    required>
+                                    <div class="invalid-feedback">Password Required</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <!-- Toggle disabled attribute & spinner icon after form submit validation
+                                        & loading -->
+                                        <button class="btn btn-secondary btn-block" type="submit" disabled>Continue</button>
+                                    </div>
+                                    <div class="col-md-6 text-right"> <a id="pills-password-tab" class="btn btn-link" data-toggle="pill" href="#pills-password"
+                                        aria-expanded="false" aria-controls="pills-password">
+                                                    Forgot Password
+                                                </a>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /End Account Login -->
+                        <!-- Forgot Password -->
+                        <div class="tab-pane fade" id="pills-password" role="tabpanel" aria-labelledby="pills-password-tab">
+                             <h6 class="font-weight-bold">Forgot Password</h6>
+
+                            <!-- Forgot Password error display message -->
+                            <div class="alert alert-danger small">Error retreiving password. Please try again.</div>
+                            <div class="alert alert-success small">Please check your email with instructions to reset your password.</div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control is-invalid"
+                                    required>
+                                    <div class="invalid-feedback">Email Address Required</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-primary btn-block" disabled>Recover Password <i class="fas fa-circle-notch fa-spin"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <!-- Back to Login --> <a id="pills-login-tab" class="btn btn-link" data-toggle="pill" href="#pills-login"
+                                        aria-expanded="false" aria-controls="pills-login">
+                                                    Back to Login
+                                                </a>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /End Forgot Password -->
+                        <!-- Create Account Tab -->
+                        <div class="tab-pane fade" id="pills-create-account" role="tabpanel" aria-labelledby="pills-create-account-tab">
+                            <p>Create an account below to continue, or <a id="pills-login-tab" data-toggle="pill"
+                                href="#pills-login">login to your account</a>.</p>
+                            <!-- Create Account Form
+                            -->
+                            <form action="" id="create-account" class="mt-3">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="checkout-fn">First Name</label>
+                                            <input class="form-control is-invalid" type="text" id="checkout-fn"
+                                            required>
+                                            <div class="invalid-feedback">First Name Required</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="checkout-ln">Last Name</label>
+                                            <input class="form-control is-invalid" type="text" id="checkout-ln"
+                                            required>
+                                            <div class="invalid-feedback">Last Name Required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="checkout-email">E-mail Address</label>
+                                            <input class="form-control is-invalid" type="email"
+                                            id="checkout-email" required>
+                                            <div class="invalid-feedback">Email Required</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="checkout-email-confirm">Confirm E-mail Address</label>
+                                            <input class="form-control is-invalid" type="email"
+                                            id="checkout-email-confirm" required>
+                                            <div class="invalid-feedback">Confirm E-mail Address Required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="checkout-phone">Phone Number</label>
+                                            <input class="form-control is-invalid" type="text"
+                                            id="checkout-phone" required>
+                                            <div class="invalid-feedback">Phone Number Required</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="checkout-organization">Organization</label>
+                                            <input class="form-control is-invalid" type="text"
+                                            id="checkout-organization" required>
+                                            <div class="invalid-feedback">Organization Required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input class="form-control is-invalid" type="password"
+                                            id="password" required>
+                                            <div class="invalid-feedback">Password Required</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="confirm-password">Confirm Password</label>
+                                            <input class="form-control is-invalid" type="password"
+                                            id="confirm-password" required>
+                                            <div class="invalid-feedback">Confirm Password Required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group w-50">
+                                    <!-- Toggle disabled attribute & spinner icon after form submit validation
+                                    & loading -->
+                                    <button class="btn btn-secondary btn-block" type="submit" disabled>Continue <i class="fas fa-circle-notch fa-spin"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /End Create Account -->
+                    </div>
+                    <!-- /End Account Information -->
+                    <!-- Billing Information -->
+                    <!-- Display this section only after account login success -->
+                     <h6 class="font-weight-bold">Billing Address</h6>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="checkout-fn">Name</label>
+                            <input class="form-control is-invalid" type="text" id="name">
+                            <div class="invalid-feedback">Name Required</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="form-group">
+                                    <label for="checkout-address-1">Street Address</label>
+                                    <input class="form-control is-invalid" type="text"
+                                    id="checkout-address">
+                                    <div class="invalid-feedback">Street Address Required</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="checkout-address-2">Street Address 2</label>
+                                    <input class="form-control" type="text" id="checkout-address-2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-city">City</label>
+                            <input class="form-control is-invalid" type="text" id="checkout-city">
+                            <div class="invalid-feedback">City Required</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="checkout-country">Country</label>
+                                    <select class="form-control custom-select is-invalid" id="checkout-country">
+                                        <option>Select</option>
+                                    </select>
+                                    <div class="invalid-feedback">Country Required</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="checkout-state">State</label>
+                                    <select class="form-control custom-select is-invalid" id="checkout-state">
+                                        <option>Select</option>
+                                    </select>
+                                    <div class="invalid-feedback">State Required</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="checkout-zip">ZIP Code</label>
+                                    <input class="form-control is-invalid" type="text" id="checkout-zip">
+                                    <div class="invalid-feedback">Zip Code Required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Payment Information -->
+                         <h6 class="font-weight-bold">Payment Information</h6>
+
+                        <div class="form-group mb-4">
+                            <label for="checkoutPaymentCardNumber">Credit Card Number</label>
+                            <input class="form-control is-invalid" id="checkoutPaymentCardNumber"
+                            type="text" required="">
+                            <div class="invalid-feedback">Invalid Credit Card #</div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="checkoutPaymentCardName">Name on Card</label>
+                            <input class="form-control is-invalid" id="checkoutPaymentCardName"
+                            type="text" required="">
+                            <div class="invalid-feedback">Name Required</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="form-group mb-md-0">
+                                    <label for="checkoutPaymentMonth">Expiration Month</label>
+                                    <select class="custom-select is-invalid" id="checkoutPaymentMonth"
+                                    required="">
+                                        <option></option>
+                                        <option>January</option>
+                                        <option>February</option>
+                                        <option>March</option>
+                                    </select>
+                                    <div class="invalid-feedback">Expiration Month Required</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group mb-md-0">
+                                    <label for="checkoutPaymentCardYear">Expiration Year</label>
+                                    <select class="custom-select is-invalid" id="checkoutPaymentCardYear"
+                                    required="">
+                                        <option></option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                        <option>2019</option>
+                                    </select>
+                                    <div class="invalid-feedback">Expiration Year Required</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="checkoutPaymentCardCVV">CVV</label>
+                                    <input class="form-control is-invalid" id="checkoutPaymentCardCVV"
+                                    type="text" required="">
+                                    <div class="invalid-feedback">CVV # Required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-4">
+                            <!-- Add order payment and place order -->
+                            <button class="btn btn-primary btn-block" type="submit">Place Order <i class="fas fa-circle-notch fa-spin"></i>
+
+                            </button>
+                        </div>
+                    </form>
+                    <!-- /End Billing Information -->
+                    <!-- Order Confirmation -->
+                    <!-- Display only after order payment and place order success -->
+                    <div class="text-center p-5"> <i class="fas fa-check-circle fa-4x text-success mb-3"></i>
+
+                         <h4>Your order has been placed!</h4>
+
+                         <h5 class="mb-4">Order #123456</h5>
+
+                        <p><a href="/my-account/" class="btn btn-primary">Go to My Account</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+
+</html>

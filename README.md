@@ -1,1 +1,0 @@
-# slatwall-bootstrap-templates
