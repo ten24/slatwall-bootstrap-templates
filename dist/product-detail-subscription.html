@@ -210,6 +210,18 @@
                         </button>
                     </div>
                     <div class="modal-body">
+                        <!-- Show alert message if product has already been added to cart -->
+                        <div class="alert alert-info">This subscription product has already been added to your cart. Please
+                            continue below to subscribe to this product.</div>
+                        <!-- If more items exist
+                        in cart, alert and redirect user complete their purchase in shopping cart
+                        -->
+                        <div class="alert alert-success">Subscription product has been added to your cart. Please checkout with
+                            the rest of your order below.”</div>
+                        <div class="text-center p-5">
+                            <p><a href="/cart/" class="btn btn-primary">Continue to Shopping Cart</a>
+                            </p>
+                        </div>
                         <!-- Order Item Details -->
                         <div class="p-3 mb-4 bg-light text-center">
                              <h6>Subscription Product Name</h6>
@@ -369,8 +381,7 @@
                                 <div class="form-group w-50">
                                     <!-- Toggle disabled attribute & spinner icon after form submit validation
                                     & loading -->
-                                    <button class="btn btn-secondary btn-block" type="submit" disabled>Continue <i class="fas fa-circle-notch fa-spin"></i>
-                                    </button>
+                                    <button class="btn btn-secondary btn-block" type="submit" disabled>Continue</button>
                                 </div>
                             </form>
                         </div>
@@ -379,61 +390,87 @@
                     <!-- /End Account Information -->
                     <!-- Billing Information -->
                     <!-- Display this section only after account login success -->
-                     <h6 class="font-weight-bold">Billing Address</h6>
+                     <h6 class="font-weight-bold mb-4">Billing Address</h6>
 
-                    <form>
-                        <div class="form-group">
-                            <label for="checkout-fn">Name</label>
-                            <input class="form-control is-invalid" type="text" id="name">
-                            <div class="invalid-feedback">Name Required</div>
+                    <div class="nav nav-tabs justify-content-between mb-3 border-0" id="nav-tab"
+                    role="tablist"> <a class="nav-link border-0 pl-0 active" id="nav-selectAddress-tab" data-toggle="tab"
+                        href="#nav-selectAddress" role="tab" aria-controls="nav-selectAddress"
+                        aria-selected="true">Select Address</a>
+ <a class="nav-link border-0" id="nav-addNewAddress-tab"
+                        data-toggle="tab" href="#nav-addNewAddress" role="tab" aria-controls="nav-addNewAddress"
+                        aria-selected="false">Add New Address</a>
+
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-selectAddress" role="tabpanel"
+                        aria-labelledby="nav-selectAddress-tab">
+                            <!-- If existing account billing addresses exist, preselect primary billing
+                            address with any secondary addresses available to select in dropdown -->
+                            <select class="custom-select" name="billingAddress">
+                                <option value="addressID" selected>Office - 20 Franklin Street, Worcester MA 01608</option>
+                                <option value="addressID">Home - 1 Main Street, Framingham MA 01721</option>
+                            </select>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-8">
+                        <div class="tab-pane fade" id="nav-addNewAddress" role="tabpanel" aria-labelledby="nav-addNewAddress-tab">
+                            <form>
                                 <div class="form-group">
-                                    <label for="checkout-address-1">Street Address</label>
-                                    <input class="form-control is-invalid" type="text"
-                                    id="checkout-address">
-                                    <div class="invalid-feedback">Street Address Required</div>
+                                    <label for="checkout-fn">Name</label>
+                                    <input class="form-control is-invalid" type="text" id="name">
+                                    <div class="invalid-feedback">Name Required</div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="form-group">
+                                            <label for="checkout-address-1">Street Address</label>
+                                            <input class="form-control is-invalid" type="text"
+                                            id="checkout-address">
+                                            <div class="invalid-feedback">Street Address Required</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label for="checkout-address-2">Street Address 2</label>
+                                            <input class="form-control" type="text" id="checkout-address-2">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="form-group">
-                                    <label for="checkout-address-2">Street Address 2</label>
-                                    <input class="form-control" type="text" id="checkout-address-2">
+                                    <label for="checkout-city">City</label>
+                                    <input class="form-control is-invalid" type="text" id="checkout-city">
+                                    <div class="invalid-feedback">City Required</div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="checkout-city">City</label>
-                            <input class="form-control is-invalid" type="text" id="checkout-city">
-                            <div class="invalid-feedback">City Required</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="form-group">
-                                    <label for="checkout-country">Country</label>
-                                    <select class="form-control custom-select is-invalid" id="checkout-country">
-                                        <option>Select</option>
-                                    </select>
-                                    <div class="invalid-feedback">Country Required</div>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label for="checkout-country">Country</label>
+                                            <select class="form-control custom-select is-invalid" id="checkout-country">
+                                                <option>Select</option>
+                                            </select>
+                                            <div class="invalid-feedback">Country Required</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label for="checkout-state">State</label>
+                                            <select class="form-control custom-select is-invalid" id="checkout-state">
+                                                <option>Select</option>
+                                            </select>
+                                            <div class="invalid-feedback">State Required</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label for="checkout-zip">ZIP Code</label>
+                                            <input class="form-control is-invalid" type="text" id="checkout-zip">
+                                            <div class="invalid-feedback">Zip Code Required</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <button class="btn btn-primary">Save Address</button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-group">
-                                    <label for="checkout-state">State</label>
-                                    <select class="form-control custom-select is-invalid" id="checkout-state">
-                                        <option>Select</option>
-                                    </select>
-                                    <div class="invalid-feedback">State Required</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-group">
-                                    <label for="checkout-zip">ZIP Code</label>
-                                    <input class="form-control is-invalid" type="text" id="checkout-zip">
-                                    <div class="invalid-feedback">Zip Code Required</div>
-                                </div>
-                            </div>
                         </div>
                         <!-- Payment Information -->
                          <h6 class="font-weight-bold">Payment Information</h6>
@@ -488,11 +525,9 @@
                         </div>
                         <div class="form-group mt-4">
                             <!-- Add order payment and place order -->
-                            <button class="btn btn-primary btn-block" type="submit">Place Order <i class="fas fa-circle-notch fa-spin"></i>
-
-                            </button>
+                            <button class="btn btn-primary btn-block" type="submit">Place Order</button>
                         </div>
-                    </form>
+                    </div>
                     <!-- /End Billing Information -->
                     <!-- Order Confirmation -->
                     <!-- Display only after order payment and place order success -->
